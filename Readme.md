@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/1/user/2493289).
-* Наставник: `Неизвестно`.
+* Студент: [Татьяна Манылова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2493289).
+* Наставник: `Дмитрий Осадченко`(https://htmlacademy.ru/profile/dimaos).
 
 ---
 
