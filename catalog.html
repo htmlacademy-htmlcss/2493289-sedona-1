@@ -54,7 +54,7 @@
                 <li class="breadcrumbs_item">
                   <a class="breadcrumbs_link">Гостиницы</a>
                 </li>
-              </ul>
+            </ul>
         </header>
         <section class="catalog_filter">
             <h2 class="visually_hidden">Фильтры для гостиниц</h2>
@@ -77,23 +77,23 @@
                             Wi-Fi
                         </label>
                     </li>
-                        </ul>
+                </ul>
             </fieldset>
               <fieldset class="catalo_filter_group">
               <legend class="catalog_filter_title">Тип жилья:</legend>
                 <ul class="house_list">
                     <li class="house_item"><label class="control">
-                    <input class="control-input" type="radio" name="type_house" value="hotel" checked>
+                    <input class="control_input" type="radio" name="type_house" value="hotel" checked>
                     Гостиница
                         </label>
                     </li>
                     <li class="hoouse_item"><label class="control">
-                        <input class="control-input" type="radio" name="type_house" value="motel">
+                        <input class="control_input" type="radio" name="type_house" value="motel">
                         Мотель
                         </label>
                     </li>
                     <li class="house_item"><label class="control">
-                        <input class="control-input" type="radio" name="type_house" value="apartment">
+                        <input class="control_input" type="radio" name="type_house" value="apartment">
                         Апартаменты
                         </label>
                     </li>
@@ -107,23 +107,77 @@
         <section class="result_filter">
             <h2 class="visually_hidden">Результат поиска гостиниц</h2>
             <h3 class="result_filter_title">Найдено гостиниц: 38</h3>
-            <select class="select_control" aria-label="Сортировка">
+            <select class="select_control" aria_label="Сортировка">
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-
-              <a class="button" href="#">
-                <span class="visually-hidden">Показать карточки</span>
+              <a class="button button_black" href="#">
+                <span class="visually_hidden">Показать карточки гостиниц блоками</span>
               </a>
-              <a class="button button_light" href="#" >
-                <span class="visually-hidden">Показать список</span>
+              <a class="button button_black" href="#" >
+                <span class="visually_hidden">Показать карточки гостиниц по одной</span>
               </a>
-
-
-
+              <a class="button button_black" href="#" >
+                <span class="visually_hidden">Показать карточки гостиниц списком</span>
+              </a>
+              <div class="hotel_card">
+                <a class="hotel_card_link" href="hotel.html">
+                  <img class="hotel_card_image" scr="#" alt="Картина гор, ночное небо">
+                  <h3 class="hotel_card_title">Amara Resort & Spa</h3>
+                </a>
+                <p class="hotel_card_text">
+                Гостиница
+                <b class="">От 4000 ₽</b>
+                </p>
+                <a class="hotel_button_detail button" href="#">подробнее</a>
+                <a class="hotel_button_favorite button" href="#">в избранное</a>
+                <img class="hotel_raiting" src="#" alt="Рейтинг гостиницы, 4 звезды">
+                <p>Рейтинг: 8,5</p>
+              </div>
+              <div class="hotel_card">
+                <a class="hotel_card_link" href="hotel.html">
+                  <img class="hotel_card_image" scr="#" alt="Картина гор, небо после грозы">
+                  <h3 class="hotel_card_title">Villas at Poco Diablo</h3>
+                </a>
+                <p class="hotel_card_text">
+                Гостиница
+                <b class="">От 5000 ₽</b>
+                </p>
+                <a class="hotel_button_detail button" href="#">подробнее</a>
+                <a class="hotel_button_favorite button" href="#">в избранное</a>
+                <img class="hotel_raiting" src="#" alt="Рейтинг гостиницы, 4 звезды">
+                <p>Рейтинг: 9,2</p>
+              </div>
+              <div class="hotel_card">
+                <a class="hotel_card_link" href="hotel.html">
+                  <img class="hotel_card_image" scr="#" alt="Картина гор, ясная погода">
+                  <h3 class="hotel_card_title">Desert Quail Inn</h3>
+                </a>
+                <p class="hotel_card_text">
+                Гостиница
+                <b class="">От 2500 ₽</b>
+                </p>
+                <a class="hotel_button_detail button" href="#">подробнее</a>
+                <a class="hotel_button_favorite button" href="#">в избранное</a>
+                <img class="hotel_raiting" src="#" alt="Рейтинг гостиницы, 3 звезды">
+                <p>Рейтинг: 6,9</p>
+              </div>
+              <div class="hotel_card">
+                <a class="hotel_card_link" href="hotel.html">
+                  <img class="hotel_card_image" scr="#" alt="Картина гор, лунное свечение">
+                  <h3 class="hotel_card_title">GreenTree Inn</h3>
+                </a>
+                <p class="hotel_card_text">
+                Гостиница
+                <b class="">От 1500 ₽</b>
+                </p>
+                <a class="hotel_button_detail button" href="#">подробнее</a>
+                <a class="hotel_button_favorite button" href="#">в избранное</a>
+                <img class="hotel_raiting" src="#" alt="Рейтинг гостиницы, 2 звезды">
+                <p>Рейтинг: 5,0</p>
+              </div>
         </section>
-
     </main>
     <footer class="footer_index">
         <section class="sign">
