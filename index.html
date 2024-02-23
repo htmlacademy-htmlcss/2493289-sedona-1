@@ -12,7 +12,7 @@
         <img class="navigation_logo" src="#" alt="Логотип сайта Седона">
         <ul class="navigation_list">
           <li class="navigation_item">
-            <a class="navigation_link" href="index.html">Главная</a>
+            <a class="navigation_link navigation_link_active">Главная</a>
           </li>
           <li class="navigation_item">
             <a class="navigation_link" href="#">О Седоне</a>
@@ -36,10 +36,8 @@
               </span>
             </a>
           </li>
-          <li class="navigation_item">
-            <a class="button button_here" href="#">Хочу сюда</a>
-          </li>
         </ul>
+        <a class="button button_here" href="#">Хочу сюда</a>
       </nav>
     </header>
     <main class="main_index">
@@ -55,7 +53,7 @@
           <li class="advantages_item">
             <h3 class="advantages_title">Настоящий городок</h3>
             <p class="advantages_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages_city" src="#" alt="Изображение города">
+            <img class="advantages_cover" src="#" alt="Город">
           </li>
           <li class="advantages_item">
             <h3 class="advantages_title">Небольшая площадь</h3>
@@ -72,7 +70,7 @@
           <li class="advantages_item">
             <h3 class="advantages_title">Там есть мост дьявола</h3>
             <p class="advantages_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages_bridge" src="#" alt="Изображение моста">
+            <img class="advantages_cover" src="#" alt="Мост">
           </li>
         </ul>
       </section>
@@ -101,18 +99,19 @@
         <a class="button button_reminder" href="#">Поиск гостиницы В седоне</a>
       </section>
     </main>
-    <footer class="footer_index">
-      <section class="sign">
-        <h2 class="sign_title">Подпишитесь на рассылку</h2>
-        <p class="sign_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="sign_form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="sign_email">Email</label>
-          <input type="email" placeholder="Ваш e-mail" name="sing_email" id="sing_email">
+    <section class="subscribe">
+      <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+      <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="subscribe_email">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe_email">
           <button class="button" type="submit">Подписаться</button>
-        </form>
-      </section>
+        </label>
+      </form>
+    </section>
+    <footer class="footer_index">
       <section class="footer_social">
-        <h2 class="visually_hidden">Данные для связи</h2>
+        <h2 class="visually_hidden">Контакты</h2>
         <ul class="footer_social_list">
           <li class="footer_social_item">
             <a class="button" href="https://vk.com/htmlacademy">
