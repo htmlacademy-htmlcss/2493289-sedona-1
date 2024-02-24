@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "mhutchie.git-graph",
+    "ritwickdey.liveserver"
   ]
 }
