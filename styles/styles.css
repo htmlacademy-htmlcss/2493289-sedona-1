@@ -66,3 +66,94 @@ body {
   width: 1200px;
   height: 485px;
 }
+
+.index_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.index_title_text {
+  font-size: 22px;
+}
+
+.advantages_item_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.advantages_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.service_title_item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.service_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.button_reminder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 375px;
+  height: 52px;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.subscribe_index {
+  background-image: url("/images/Subscribe.jpg");
+  width: 1200px;
+  height: 414px;
+}
+
+.subscribe_title_color {
+  color: #ffffff;
+}
+
+.subscribe_title_text_color {
+  color: #ffffff;
+}
+
+.field {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 4px 0 0 4px;
+  border-color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  width: 452px;
+  height: 52px;
+}
+
+.button_subscribe {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  width: 232px;
+  height: 52px;
+  background-color: #82B3D3;
+}
