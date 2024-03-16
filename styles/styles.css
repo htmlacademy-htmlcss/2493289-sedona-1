@@ -1,5 +1,68 @@
-body {
-  background-color: burlywood;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
-;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.18;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation_link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  text-decoration: none;
+}
+
+.number_of_favorites {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: #7DB54F;
+}
+
+.button_here {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+}
+
+.navigation_link_active {
+  /*text-underline-offset: 20px;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;*/
+}
+
+.hero {
+  background-image: url("/images/index_background.jpg");
+  width: 1200px;
+  height: 485px;
+}
