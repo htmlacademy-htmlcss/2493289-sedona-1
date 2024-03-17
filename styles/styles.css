@@ -30,6 +30,7 @@ body {
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 .number_of_favorites {
@@ -71,11 +72,7 @@ body {
 
 .img_text {
   position: relative;
-  left: 371px;
-  right: 371px;
-  /* я не понимаю относительно чего позиционируется картинка и почему если я добавляют top, то блок сильно слезает вниз :-(
-  bottom: 82px;
-  top: 51px;*/
+  padding: 51px 371px;
 }
 
 .index_title {
@@ -90,6 +87,12 @@ body {
   font-size: 22px;
   text-align: center;
 }
+
+/*Заблочено, потому что с этим свойством лишки расползаются по страничке. Не знаю пока что с этим делать
+.advantages_item {
+  width: 400px;
+  height: 385px;
+}*/
 
 .advantages_item_title {
   font-weight: 700;
@@ -166,6 +169,8 @@ body {
   width: 452px;
   height: 52px;
   background-color: #f2f2f2;
+  margin-top: 104px;
+  margin-left: 258px;
 
 }
 
@@ -191,12 +196,13 @@ body {
   text-decoration: none;
 }
 
-/* Разве не нужно для этой картинки добавить блок в html?
+/* Разве не нужно для этой картинки добавить блок в html отдельный тег?
   Иначе он будет присоединяться к какому-то уже указанному тегу и влиять на него
-  (я в обще-то поэтому его и заблочила)
+  (я не понимаю как с ним работать и заблочила пока);
 .service_home {
   background-image: url(/images/Advantage_icon_home.svg);
   background-repeat: no-repeat;
+  padding-left: 30px 77;
 }
 
 .service_eat {
@@ -209,22 +215,23 @@ body {
   background-repeat: no-repeat;
 }*/
 
+/*
 .subscribe_form {
-  margin-left: 258px;
-  /*Почему если добавить следующее свойство то блок разваливается на две строки?
+  margin: 258px 258px 104px 258px;
+  Почему если добавить следующее свойство то блок разваливается на две строки?
   width: 684px;
   height: 52;
+  margin: 258px 258px 104px 258px;
   + блок также разваливается, если обогатить свойством  margin-right.
   Как тогда отступы добавлять со всех сторон дл блока?
-  */
-}
+}*/
 
 .catalog_filter {
   background-image: url("/images/catalog_background.jpg");
+  color: #ffffff;
   /* Если раскомментировать код, то блок слипнется с блоком "Результат поиска". Почему?
   width: 1200px;
   height: 412px;*/
-  color: #ffffff;
 }
 
 .catalog_title {
