@@ -270,11 +270,151 @@ body {
   height: 36px;
   background-color: #82b3d3;
   border-color: #82b3d3;
+  border: none;
 }
 
 .button_reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
   border-radius: 4px;
   padding: 8px 50px;
   width: 191px;
   height: 36px;
+  border: none;
+  background-color: transparent;
+}
+
+.result_filter_text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/*Не понимаю почему не перебиваются стили браузера*/
+option .control_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.button_cheap {
+  background-image: url(/images/button_object.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+}
+
+.button_single {
+  background-image: url(/images/button_single.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+}
+
+.button_list {
+  background-image: url(/images/button_list.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+}
+
+.hotel_card_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.hotel_card_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.hotel_card_price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.hotel_button_detail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.hotel_button_favorite {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.hotel_star {
+  background-image: url(/images/star.svg);
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+.hotel_raiting {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.pagination_link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 11px 23px;
+  border-radius: 4px 4px 4px 4px;
+  width: 60px;
+  height: 60px;
+}
+
+.pagination_active {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination_rest {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.subscribe_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscribe_text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
 }

@@ -113,17 +113,17 @@
         <h2 class="visually_hidden">Результат поиска гостиниц</h2>
         <p class="result_filter_text">Найдено гостиниц: 38</p>
         <select class="select_control">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
+          <option value="control_text">Сначала дешёвые</option>
+          <option value="control_text">Сначала дорогие</option>
+          <option value="control_text">Сначала популярные</option>
         </select>
-        <a class="button button_black" href="#">
+        <a class="button_cheap" href="#">
           <span class="visually_hidden">Показать карточки гостиниц блоками</span>
         </a>
-        <a class="button button_black" href="#">
+        <a class="button_single" href="#">
           <span class="visually_hidden">Показать карточки гостиниц по одной</span>
         </a>
-        <a class="button button_black" href="#">
+        <a class="button_list" href="#">
           <span class="visually_hidden">Показать карточки гостиниц списком</span>
         </a>
         <ul class="hotel_list">
@@ -136,7 +136,7 @@
               </a>
               <p class="hotel_card_text">
                 Гостиница
-                <b class="">От 4000 ₽</b>
+                <span class="hotel_card_price">От 4000 ₽</span>
               </p>
               <a class="hotel_button_detail button" href="#">подробнее</a>
               <a class="hotel_button_favorite button" href="#">в избранное</a>
@@ -153,10 +153,10 @@
               </a>
               <p class="hotel_card_text">
                 Гостиница
-                <b class="">От 5000 ₽</b>
+                <span class="hotel_card_price">От 5000 ₽</span>
               </p>
-              <a class="hotel_button_detail button" href="#">подробнее</a>
-              <a class="hotel_button_favorite button" href="#">в избранное</a>
+              <a class="hotel_button_detail" href="#">подробнее</a>
+              <a class="hotel_button_favorite" href="#">в избранное</a>
               <div class="hotel_star"><span class="visually_hidden">Рейтинг гостиницы, 4 звезды</span></div>
               <p class="hotel_raiting">Рейтинг: 9,2</p>
             </div>
@@ -170,7 +170,7 @@
               </a>
               <p class="hotel_card_text">
                 Гостиница
-                <b class="">От 2500 ₽</b>
+                <span class="hotel_card_price">От 2500 ₽</span>
               </p>
               <a class="hotel_button_detail button" href="#">подробнее</a>
               <a class="hotel_button_favorite button" href="#">в избранное</a>
@@ -187,7 +187,7 @@
               </a>
               <p class="hotel_card_text">
                 Гостиница
-                <b class="">От 1500 ₽</b>
+                <span class="hotel_card_price">От 1500 ₽</span>
               </p>
               <a class="hotel_button_detail button" href="#">подробнее</a>
               <a class="hotel_button_favorite button" href="#">в избранное</a>
@@ -202,13 +202,13 @@
           <a class="pagination_link pagination_active">1</a>
         </li>
         <li class="pagination_item">
-          <a class="pagination_link">2</a>
+          <a class="pagination_link pagination_rest">2</a>
         </li>
         <li class="pagination_item">
-          <a class="pagination_link">3</a>
+          <a class="pagination_link pagination_rest">3</a>
         </li>
         <li class="pagination_item">
-          <a class="pagination_link">4</a>
+          <a class="pagination_link pagination_rest">4</a>
         </li>
         <li class="pagination_item">
           <span class="pagination_point">
@@ -216,7 +216,7 @@
           </span>
         </li>
         <li class="pagination_item">
-          <a class="pagination_link">10</a>
+          <a class="pagination_link pagination_rest">10</a>
         </li>
       </ol>
     </main>
