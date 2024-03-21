@@ -18,10 +18,16 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 1.18;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   color: #000000;
+  margin: 0;
+}
+
+.container {
   width: 1200px;
-  height: 3557px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .navigation_link {
@@ -58,16 +64,12 @@ body {
   background-color: #756157;
 }
 
-.navigation_link_active {
-  /*text-underline-offset: 20px;
-  text-decoration-thickness: 2px;
-  text-underline-position: under;*/
-}
-
 .hero {
-  background-image: url("/images/index_background.jpg");
+  background-image: url("../images/index_background.jpg");
   width: 1200px;
   height: 485px;
+  background-color: #756157;
+  background-position: center;
 }
 
 .img_text {
@@ -76,16 +78,20 @@ body {
 }
 
 .index_title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .index_title_text {
+  margin: 0;
   font-size: 22px;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 /*Заблочено, потому что с этим свойством лишки расползаются по страничке. Не знаю пока что с этим делать
@@ -125,6 +131,8 @@ body {
 }
 
 .button_reminder {
+  margin: 0;
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
@@ -139,15 +147,19 @@ body {
   margin-left: 412px;
   margin-right: 412px;
   margin-top: 54px;
-  /*В коде браузера вижу что отступ есть, но внешне ничего не изменилось*/
   margin-bottom: 96px;
-  /*В коде браузера вижу что отступ есть, но внешне ничего не изменилось*/
+  text-align: center;
 }
 
 .subscribe_index {
-  background-image: url("/images/Subscribe.jpg");
+  background-image: url("../images/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-color: #756157;
+  background-position: center;
+  background-size: cover;
   width: 1200px;
-  height: 414px;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe_title_color {
@@ -169,9 +181,6 @@ body {
   width: 452px;
   height: 52px;
   background-color: #f2f2f2;
-  margin-top: 104px;
-  margin-left: 258px;
-
 }
 
 .button_subscribe {
@@ -215,23 +224,19 @@ body {
   background-repeat: no-repeat;
 }*/
 
-/*
-.subscribe_form {
-  margin: 258px 258px 104px 258px;
-  Почему если добавить следующее свойство то блок разваливается на две строки?
-  width: 684px;
-  height: 52;
-  margin: 258px 258px 104px 258px;
-  + блок также разваливается, если обогатить свойством  margin-right.
-  Как тогда отступы добавлять со всех сторон дл блока?
-}*/
 
-.catalog_filter {
-  background-image: url("/images/catalog_background.jpg");
+.subscribe_form {
+  margin: 0;
+  margin-left: 258px;
+}
+
+.catalog_img {
+  background-image: url(../images/catalog_background.jpg);
   color: #ffffff;
-  /* Если раскомментировать код, то блок слипнется с блоком "Результат поиска". Почему?
-  width: 1200px;
-  height: 412px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #756257;
+  background-position: center;
 }
 
 .catalog_title {
@@ -241,11 +246,11 @@ body {
 }
 
 .button_image_breadcrumbs {
-  background-image: url(/images/bread_home.svg);
+  background-image: url(../images/bread_home.svg);
   background-repeat: no-repeat;
 }
 
-*/ .breadcrumbs_link {
+.breadcrumbs_link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.31;
@@ -390,6 +395,7 @@ option .control_text {
 }
 
 .pagination_link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
@@ -399,6 +405,7 @@ option .control_text {
   border-radius: 4px 4px 4px 4px;
   width: 60px;
   height: 60px;
+  text-align: center;
 }
 
 .pagination_active {
@@ -428,4 +435,12 @@ option .control_text {
 
 .style_list {
   list-style-type: none;
+}
+
+.select_control {
+  font: inherit;
+  padding-left: 20px;
+  padding-right: 131px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
