@@ -25,6 +25,7 @@ body {
 
 .container {
   width: 1200px;
+  min-height: 412;
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -48,12 +49,13 @@ body {
 }
 
 .navigation_link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
-  /* padding: 20px 16px; */
+  padding: 20px 16px;
 }
 
 .number_of_favorites {
@@ -93,17 +95,24 @@ body {
 .hero {
   background-image: url("../images/index_background.jpg");
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   background-color: #756157;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
+/* .hero_divider {
+  background-image: url(../images/divider.svg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 57px;
+} */
+
 .img_text {
-  position: relative;
-  padding-left: 371px;
-  padding-right: 371px;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  margin-left: 371px;
+  margin-right: 371px;
+  margin-top: 51px;
 }
 
 .index_title {
@@ -243,8 +252,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 1200px;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  min-height: 415px;
 }
 
 .subscribe_color {
@@ -252,7 +260,12 @@ body {
 }
 
 .subscribe_form {
-  margin: 0 auto;
+  width: 690px;
+  height: 52px;
+  margin-left: 258px;
+  margin-right: 258px;
+  margin-top: 54px;
+  margin-bottom: 104px;
 }
 
 .field {
@@ -350,6 +363,8 @@ body {
   background-color: #82b3d3;
   border-color: #82b3d3;
   border: none;
+  box-sizing: border-box;
+  margin-left: 10px;
 }
 
 .button_reset {
@@ -436,11 +451,12 @@ option .control_text {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 26px;
   width: 140px;
   height: 36px;
   background-color: #756157;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .hotel_button_favorite {
@@ -450,11 +466,12 @@ option .control_text {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 20px;
   width: 140px;
   height: 36px;
   background-color: #82B3D3;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .hotel_star {
