@@ -32,6 +32,7 @@ body {
   background-color: #ffffff;
 }
 
+
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -262,19 +263,23 @@ body {
   box-sizing: border-box;
 }
 
-.subscribe_index {
+.subscribe {
   box-sizing: border-box;
-  background-image: url("../images/Subscribe.jpg");
-  background-repeat: no-repeat;
-  background-color: #756157;
-  background-position: center;
-  background-size: cover;
-  width: 1200px;
-  min-height: 415px;
   padding-top: 96px;
   padding-left: 258px;
   padding-right: 258px;
 }
+
+.subscribe_index {
+  background-image: url("../images/Subscribe.jpg");
+  background-color: #756157;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  min-height: 415px;
+  background-position: center;
+}
+
 
 .subscribe_color {
   color: #ffffff;
@@ -312,7 +317,7 @@ body {
   border-radius: 0 4px 4px 0;
   width: 232px;
   height: 52px;
-  padding: 8px 50px;
+  padding: 8px 16px;
   background-color: #82b3d3;
   box-sizing: border-box;
   text-align: center;
@@ -374,7 +379,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 16px;
   width: 191px;
   height: 36px;
   background-color: #82b3d3;
@@ -420,27 +425,33 @@ option .control_text {
   padding-bottom: 14px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  margin: ;
+}
+
+.button_visually {
+  display: block;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  border: 2px solid #e5e5e5;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 16px;
+  height: 14px;
+  border-radius: 4px;
 }
 
 .button_cheap {
-  background-image: url(/images/button_object.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 14px;
+  background-image: url("../images/button_object.svg");
 }
 
 .button_single {
-  background-image: url(/images/button_single.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 14px;
+  background-image: url("../images/button_single.svg");
 }
 
 .button_list {
-  background-image: url(/images/button_list.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 14px;
+  background-image: url("../images/button_list.svg");
 }
 
 .hotel_card_title {
@@ -492,7 +503,7 @@ option .control_text {
 }
 
 .hotel_star {
-  background-image: url(/images/star.svg);
+  background-image: url("../images/star.svg");
   background-repeat: no-repeat;
   margin-top: 20px;
 }
@@ -510,6 +521,7 @@ option .control_text {
   font-size: 20px;
   line-height: 1.8;
   text-transform: uppercase;
+  text-decoration: none;
   border-radius: 4px;
   padding: 11px 11px;
   width: 38px;
@@ -540,4 +552,5 @@ option .control_text {
   font-size: 22px;
   line-height: 1.18;
   text-align: center;
+  color: #333333;
 }
