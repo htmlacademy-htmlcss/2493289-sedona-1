@@ -194,6 +194,8 @@ body {
   box-sizing: border-box;
   padding: 185px 85px 60px;
   min-height: 385px;
+  background-repeat: no-repeat;
+  background-position: center 81px;
 }
 
 .service_title_item {
@@ -214,20 +216,18 @@ body {
 
 .service_home {
   background-image: url("../images/Advantage_icon_home.svg");
-  background-repeat: no-repeat;
-  background-position: center 81px;
 }
 
 .service_eat {
   background-image: url("../images/Advantage_icon_eat.svg");
-  background-repeat: no-repeat;
-  background-position: center 81px;
 }
 
 .service_present {
   background-image: url("../images/Advantage_icon_present.svg");
-  background-repeat: no-repeat;
-  background-position: center 81px;
+}
+
+.service_list li:nth-child(odd) {
+  background-color: #f0f6fa;
 }
 
 .index_title_reminder {
@@ -263,6 +263,7 @@ body {
 }
 
 .subscribe_index {
+  box-sizing: border-box;
   background-image: url("../images/Subscribe.jpg");
   background-repeat: no-repeat;
   background-color: #756157;
@@ -270,6 +271,9 @@ body {
   background-size: cover;
   width: 1200px;
   min-height: 415px;
+  padding-top: 96px;
+  padding-left: 258px;
+  padding-right: 258px;
 }
 
 .subscribe_color {
@@ -279,10 +283,6 @@ body {
 .subscribe_form {
   width: 690px;
   height: 52px;
-  margin-left: 258px;
-  margin-right: 258px;
-  margin-top: 54px;
-  margin-bottom: 104px;
 }
 
 .field {
@@ -295,7 +295,7 @@ body {
   width: 452px;
   height: 52px;
   padding-left: 20px;
-  padding-right: 345px;
+  padding-right: 340px;
   padding-top: 14px;
   padding-bottom: 14px;
   background-color: #f2f2f2;
