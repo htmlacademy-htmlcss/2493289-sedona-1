@@ -21,7 +21,6 @@ body {
   background-color: #F2F2F2;
   color: #000000;
   margin: 0;
-  width: 1200px;
 }
 
 .container {
@@ -108,12 +107,9 @@ body {
   box-sizing: border-box
 }
 
-/* .hero_divider::before {
+/* .hero_divider::after {
   content: url("../images/divider.svg");
   background-repeat: no-repeat;
-  position: relative;
-  top: 428px;
-  bottom: 0;
   width: 1200px;
   height: 57px;
 } */
@@ -432,6 +428,7 @@ option .control_text {
   display: block;
   box-sizing: border-box;
   background-repeat: no-repeat;
+  background-position: center;
   border: 2px solid #e5e5e5;
   padding-left: 16px;
   padding-right: 17px;
