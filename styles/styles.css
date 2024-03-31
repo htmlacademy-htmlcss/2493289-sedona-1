@@ -20,17 +20,19 @@ body {
   line-height: 1.18;
   background-color: #F2F2F2;
   color: #000000;
-  margin: 0;
+  width: 1200px;
+  min-height: 100%;
+  margin: auto;
 }
 
 .container {
   width: 1200px;
-  min-height: 412;
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .visually_hidden {
   position: absolute;
@@ -49,6 +51,27 @@ body {
   list-style-type: none;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  height: 64px;
+}
+
+.navigation_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_style1 {
+  min-width: 339px;
+}
+
+.navigation_style2 {
+  min-width: 268px;
+  margin-left: auto;
+}
+
 .navigation_link {
   display: block;
   font-weight: 700;
@@ -65,7 +88,7 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 1;
-  border-radius: 10px;
+  border-radius: 50%;
   height: 14px;
   width: 14px;
   background-color: #7DB54F;
@@ -114,6 +137,9 @@ body {
   height: 57px;
 } */
 
+.main_index {
+  flex-grow: 1;
+}
 
 .index_title {
   font-weight: 700;
@@ -136,8 +162,19 @@ body {
   color: #333333;
 }
 
+.advantages_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
 .advantages_item {
   background-color: #e6f0f6;
+}
+
+.adv_style {
+  width: 400px;
+  min-height: 385px;
 }
 
 .advantages_item:nth-child(2n) {
@@ -151,9 +188,16 @@ body {
 }
 
 .advantages_item_extended {
+  min-width: 1200px;
   background-color: #82b3d3;
   color: #ffffff;
 }
+
+.wrapper_style {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .advantages_item_title {
   font-weight: 700;
@@ -223,6 +267,14 @@ body {
   background-image: url("../images/Advantage_icon_present.svg");
 }
 
+.service_list {
+  display: flex;
+  width: 1200px;
+  min-height: 385px;
+  padding: 0;
+  margin: 0;
+}
+
 .service_list li:nth-child(odd) {
   background-color: #f0f6fa;
 }
@@ -282,7 +334,8 @@ body {
 }
 
 .subscribe_form {
-  width: 690px;
+  display: flex;
+  width: 452px;
   height: 52px;
 }
 
@@ -319,6 +372,19 @@ body {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  min-width: 1060px;
+  margin: 0 auto;
+}
+
+.footer_social_list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1060px;
+  padding: 0;
+}
+
 .footer_contacts_phone {
   font-weight: 400;
   font-size: 40px;
@@ -326,6 +392,11 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  padding: 5px 194px;
+}
+
+.main_catalog {
+  flex-grow: 1;
 }
 
 .catalog_img {
