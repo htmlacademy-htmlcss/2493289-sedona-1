@@ -193,11 +193,10 @@ body {
   color: #ffffff;
 }
 
-.wrapper_style {
+.advantages_item_wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
 
 .advantages_item_title {
   font-weight: 700;
@@ -205,6 +204,7 @@ body {
   line-height: 1.17;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 102px;
 }
 
 .advantages_text {
@@ -383,6 +383,7 @@ body {
   justify-content: space-between;
   min-width: 1060px;
   padding: 0;
+  margin: 40px 70px;
 }
 
 .footer_contacts_phone {
@@ -406,6 +407,28 @@ body {
   background-size: cover;
   background-color: #756257;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 70px 70px;
+  min-width: 1060px;
+  min-height: 307px;
+}
+
+.catalog_filter {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  min-width: 1060px;
+  min-height: 160px;
+}
+
+.catalog_filter_group {
+  border: 0;
+}
+
+.catalog_filter_style {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog_title {
@@ -471,11 +494,24 @@ body {
   background-color: transparent;
 }
 
+.result_filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_filter {
+  display: flex;
+  min-width: 1060px;
+  height: 49px;
+  margin: 50px 70px 40px;
+}
+
 .result_filter_text {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
+  margin: 0;
 }
 
 option .control_text {
@@ -510,6 +546,12 @@ option .control_text {
   border-radius: 4px;
 }
 
+.list_button_visually {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .button_cheap {
   background-image: url("../images/button_object.svg");
 }
@@ -520,6 +562,22 @@ option .control_text {
 
 .button_list {
   background-image: url("../images/button_list.svg");
+}
+
+.hotel_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 70px;
+  padding: 0;
+  width: 1060px;
+}
+
+.hotel_card_item {
+  width: 340px;
+  min-height: 438px;
+  padding: 0;
 }
 
 .hotel_card_title {
@@ -582,6 +640,15 @@ option .control_text {
   line-height: 125%;
   text-transform: uppercase;
 }
+
+.pagination_list {
+  display: flex;
+  width: 1060;
+  height: 60px;
+  padding: 0;
+  margin: 40px 70px 70px;
+}
+
 
 .pagination_link {
   display: block;

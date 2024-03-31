@@ -71,7 +71,7 @@
             <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog_filter_group">
                 <legend class="catalog_filter_title">Инфраструктура:</legend>
-                <ul class="infrastructure_list style_list">
+                <ul class="infrastructure_list style_list catalog_filter_style">
                   <li class="infrastructure_item catalog_text">
                     <label class="control">
                       <input class="control_input" type="checkbox" name="pool" checked>
@@ -92,7 +92,7 @@
               </fieldset>
               <fieldset class="catalog_filter_group">
                 <legend class="catalog_filter_title">Тип жилья:</legend>
-                <ul class="house_list style_list">
+                <ul class="house_list style_list catalog_filter_style">
                   <li class="house_item catalog_text"><label class="control">
                       <input class="control_input" type="radio" name="type_house" value="hotel" checked>
                       Гостиница</label>
@@ -113,30 +113,32 @@
           </section>
         </div>
         <section class="result_filter">
-          <h2 class="visually_hidden">Результат поиска гостиниц</h2>
-          <p class="result_filter_text">Найдено гостиниц: 38</p>
-          <select class="select_control">
-            <option>Сначала дешёвые</option>
-            <option>Сначала дорогие</option>
-            <option>Сначала популярные</option>
-          </select>
-          <ul class="list_button_visually">
-            <li class="item_button_visually style_list">
-              <a class="button_cheap button_visually" href="#">
-                <span class="visually_hidden">Показать карточки гостиниц блоками</span>
-              </a>
-            </li>
-            <li class="item_button_visually style_list">
-              <a class="button_single button_visually" href="#">
-                <span class="visually_hidden">Показать карточки гостиниц по одной</span>
-              </a>
-            </li>
-            <li class="item_button_visually style_list">
-              <a class="button_list button_visually" href="#">
-                <span class="visually_hidden">Показать карточки гостиниц списком</span>
-              </a>
-            </li>
-          </ul>
+          <div class="container_filter">
+            <h2 class="visually_hidden">Результат поиска гостиниц</h2>
+            <p class="result_filter_text">Найдено гостиниц: 38</p>
+            <select class="select_control">
+              <option>Сначала дешёвые</option>
+              <option>Сначала дорогие</option>
+              <option>Сначала популярные</option>
+            </select>
+            <ul class="list_button_visually">
+              <li class="item_button_visually style_list">
+                <a class="button_cheap button_visually" href="#">
+                  <span class="visually_hidden">Показать карточки гостиниц блоками</span>
+                </a>
+              </li>
+              <li class="item_button_visually style_list">
+                <a class="button_single button_visually" href="#">
+                  <span class="visually_hidden">Показать карточки гостиниц по одной</span>
+                </a>
+              </li>
+              <li class="item_button_visually style_list">
+                <a class="button_list button_visually" href="#">
+                  <span class="visually_hidden">Показать карточки гостиниц списком</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="hotel_list style_list">
             <li class="hotel_card_item">
               <div class="catalog_card">
