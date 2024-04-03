@@ -319,10 +319,12 @@ body {
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 684px;
+  min-height: 215px;
   box-sizing: border-box;
-  padding-top: 96px;
-  padding-left: 258px;
-  padding-right: 258px;
+  padding: 96px 258px;
 }
 
 .subscribe_index {
@@ -336,13 +338,19 @@ body {
 }
 
 
-.subscribe_color {
+.index_title_style {
   color: #ffffff;
+  padding: 0 104px 20px;
+}
+
+.index_title_text_style {
+  color: #ffffff;
+  padding: 0 104px 54px;
 }
 
 .subscribe_form {
   display: flex;
-  width: 452px;
+  width: 684px;
   height: 52px;
 }
 
@@ -356,7 +364,7 @@ body {
   width: 452px;
   height: 52px;
   padding-left: 20px;
-  padding-right: 340px;
+  padding-right: 150px;
   padding-top: 14px;
   padding-bottom: 14px;
   background-color: #f2f2f2;
@@ -380,17 +388,17 @@ body {
 }
 
 .footer {
-  display: flex;
+  /* display: flex;
   min-width: 1060px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .footer_social_list {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   min-width: 1060px;
   padding: 0;
-  margin: 40px 70px;
+  margin: 40px 70px; */
 }
 
 .footer_contacts_phone {
@@ -494,7 +502,7 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 16px;
   width: 191px;
   height: 36px;
   border: none;
@@ -612,7 +620,7 @@ option .control_text {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 26px;
+  padding: 8px 16px;
   width: 140px;
   height: 36px;
   background-color: #756157;
@@ -627,7 +635,7 @@ option .control_text {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 20px;
+  padding: 8px 16px;
   width: 140px;
   height: 36px;
   background-color: #82B3D3;
