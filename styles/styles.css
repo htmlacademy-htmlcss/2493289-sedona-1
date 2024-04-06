@@ -53,7 +53,12 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  max-width: 1060px;
+  padding: 0 70px;
+}
+
+.navigation_logo {
+  margin-right: 30px;
 }
 
 .navigation_list {
@@ -64,12 +69,11 @@ body {
 }
 
 .navigation_style1 {
-  max-width: 339px;
+  max-width: 600px;
 }
 
 .navigation_style2 {
-  max-width: 268px;
-  padding: 14px 0;
+  max-width: 350px;
   margin-left: auto;
 }
 
@@ -128,7 +132,8 @@ body {
   padding-top: 51px;
   padding-left: 371px;
   padding-right: 371px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  margin-bottom: 69px;
 }
 
 /* .hero_divider::after {
@@ -153,7 +158,8 @@ body {
 }
 
 .index_title_advantages {
-  padding: 69px 290px 25px;
+  padding: 0 150px;
+  margin-bottom: 25px;
 }
 
 .index_title_text {
@@ -162,6 +168,10 @@ body {
   color: #333333;
   padding: 0;
   margin: 0;
+}
+
+.advantages {
+  margin-bottom: 64px;
 }
 
 .advantages_list {
@@ -173,8 +183,6 @@ body {
 .advantages_item {
   display: flex;
   background-color: #e6f0f6;
-  width: 400px;
-  min-height: 385px;
   align-items: center;
 }
 
@@ -183,11 +191,11 @@ body {
 }
 
 .index_title_text_advantages {
-  padding: 0 275px 69px;
+  margin-bottom: 69px;
+  padding: 0 150px;
 }
 
 .advantages_item_extended {
-  min-width: 1200px;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -196,7 +204,9 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding: 70px 85px;
+  width: 400px;
+  min-height: 385px;
+  padding: 90px 60px;
 }
 
 .advantages_item_title {
@@ -206,8 +216,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0 27px;
-  padding-bottom: 30px;
+  margin-bottom: 62px;
 }
 
 .advantages_text {
@@ -216,8 +225,6 @@ body {
   line-height: 1.17;
   text-align: center;
   margin: 0;
-  padding: 0;
-
 }
 
 .advantages_item:not(.advantages_item_extended) {
@@ -225,17 +232,18 @@ body {
 }
 
 .index_title_service {
-  padding: 64px 347px 20px;
+  padding: 0 150px;
+  margin-bottom: 20px;
 }
 
 .index_title_text_service {
-  padding: 0 355px 64px;
+  padding: 0 150px;
+  margin-bottom: 64px;
 }
 
 .service_item {
   box-sizing: border-box;
-  padding: 181px 85px;
-  padding-bottom: 81px;
+  padding: 183px 60px 50px;
   width: 400px;
   min-height: 385px;
   background-repeat: no-repeat;
@@ -250,6 +258,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .service_text {
@@ -290,15 +299,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 304px;
+  padding: 96px 250px;
 }
 
 .index_title_reminder {
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .index_title_text_reminder {
-  padding-top: 20px;
   padding-bottom: 54px;
 }
 
