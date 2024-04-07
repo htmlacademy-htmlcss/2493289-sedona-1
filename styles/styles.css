@@ -208,6 +208,7 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 400px;
   min-height: 385px;
@@ -602,6 +603,7 @@ option .control_text {
 
 .list_button_visually {
   display: flex;
+  gap: 8px;
   padding: 0;
   margin: 0;
 }
