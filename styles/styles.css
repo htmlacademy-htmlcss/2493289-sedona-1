@@ -58,6 +58,7 @@ body {
 }
 
 .navigation_logo {
+  display: block;
   margin-right: 30px;
 }
 
@@ -84,21 +85,36 @@ body {
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation_link_style1 {
   padding: 20px 16px;
+}
+
+.navigation_link_style2 {
+  padding: 22px 12px;
+}
+
+.navigation_item {
+  position: relative;
 }
 
 .number_of_favorites {
   display: block;
+  box-sizing: border-box;
   color: #ffffff;
   font-weight: 400;
   font-size: 10px;
   line-height: 1;
   border-radius: 10px;
+  min-width: 20px;
   height: auto;
-  min-width: 14px;
   background-color: #7DB54F;
   padding: 4px;
   text-align: center;
+  position: absolute;
+  top: 11px;
+  right: 4px;
 
 }
 
@@ -129,19 +145,21 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 51px;
-  padding-left: 371px;
-  padding-right: 371px;
+  padding: 51px 371px 0;
   box-sizing: border-box;
   margin-bottom: 69px;
+  position: relative;
 }
 
-/* .hero_divider::after {
+.hero_divider::after {
   content: url("../images/divider.svg");
   background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
-} */
+  position: absolute;
+  top: 428px;
+  left: 0;
+}
 
 .main_index {
   flex-grow: 1;
@@ -448,7 +466,7 @@ body {
 }
 
 .catalog_img {
-  background-image: url(../images/catalog_background.jpg);
+  background-image: url("../images/catalog_background.jpg");
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,6 +489,9 @@ body {
 
 .catalog_filter_group {
   border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
 }
 
 .catalog_filter_style {
@@ -484,17 +505,52 @@ body {
   line-height: 1.3;
   padding: 0;
   margin: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  min-width: 114px;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog_header {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs_item {
+  margin: 0;
+  padding: 0;
 }
 
 .button_image_breadcrumbs {
-  background-image: url(../images/bread_home.svg);
+  background-image: url("../images/bread_home.svg");
+  width: 13px;
+  height: 25px;
   background-repeat: no-repeat;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 1px;
+  padding-right: 10px;
+  margin: 0;
+  margin-right: 30px;
+  box-sizing: border-box;
+  display: block;
+  background-position: center;
 }
 
 .breadcrumbs_link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.31;
+  padding: 0;
+  margin: 0;
+}
+
+.infrastructure_list {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog_filter_title {
