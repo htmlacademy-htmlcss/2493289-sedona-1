@@ -510,6 +510,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   min-width: 114px;
   padding: 0;
   margin: 0;
