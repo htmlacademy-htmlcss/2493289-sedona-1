@@ -70,11 +70,11 @@ body {
 }
 
 .navigation_style1 {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .navigation_style2 {
-  max-width: 350px;
+  max-width: 300px;
   margin-left: auto;
 }
 
@@ -92,6 +92,7 @@ body {
 }
 
 .navigation_link_style2 {
+  display: block;
   padding: 22px 12px;
 }
 
@@ -130,7 +131,7 @@ body {
   border-radius: 4px;
   padding: 8px 16px;
   width: 160px;
-  height: 36px;
+  min-height: 36px;
   background-color: #756157;
   margin-top: 14px;
   margin-bottom: 14px;
@@ -433,7 +434,7 @@ body {
 .footer_social_list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 142px;
+  max-width: 150px;
   padding: 0;
   margin: 0;
 }
@@ -554,6 +555,21 @@ body {
 }
 
 .catalog_filter_title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.infrastructure_item {
+  margin-bottom: 16px;
+}
+
+.infrastructure_item:last-child {
+  margin-bottom: 0;
+}
+
+
+.catalog_filter_title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -569,6 +585,7 @@ body {
 .button_app_reset {
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 
 .button_apply {
@@ -586,6 +603,7 @@ body {
   border-color: #82b3d3;
   border: none;
   box-sizing: border-box;
+  margin: 32px;
 }
 
 .button_reset {
@@ -623,6 +641,7 @@ body {
   margin: 0;
   margin-right: auto;
   padding: 6px 0;
+
 }
 
 option .control_text {
@@ -656,6 +675,8 @@ option .control_text {
 
 .list_button_visually {
   display: flex;
+  max-width: 160px;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 0;
   margin: 0;
@@ -693,6 +714,7 @@ option .control_text {
 }
 
 .hotel_card_cover {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -774,10 +796,9 @@ option .control_text {
   display: flex;
   flex-wrap: wrap;
   gap: 0 8px;
-  width: 1060;
-  min-height: 60px;
-  padding: 40px 70px 40px;
-  margin: 0;
+  /* width: 1060; */
+  padding: 0;
+  margin: 0 70px;
 }
 
 .pagination_point {
