@@ -53,8 +53,11 @@ body {
 
 .navigation {
   display: flex;
-  max-width: 1060px;
-  padding: 0 70px;
+  width: 1060px;
+}
+
+.page_header {
+  margin: 0 auto;
 }
 
 .navigation_logo {
@@ -346,7 +349,7 @@ body {
   border-radius: 4px;
   padding: 8px 16px;
   width: 375px;
-  height: 52px;
+  min-height: 52px;
   background-color: #756157;
   text-decoration: none;
   text-align: center;
