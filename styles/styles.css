@@ -209,10 +209,6 @@ body {
   min-height: 385px;
 }
 
-.location_image {
-  order: 1;
-}
-
 .advantages_item:nth-child(2n) {
   background-color: #f0f6fa;
 }
@@ -234,7 +230,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  padding: 90px 60px;
+  padding: 90px 85px;
 }
 
 .advantages_item_title {
@@ -737,6 +733,11 @@ option .control_text {
   margin-bottom: 16px;
 }
 
+.hotel_card_link {
+  color: #000000;
+  text-decoration: none;
+}
+
 .hotel_card_title {
   font-weight: 700;
   font-size: 24px;
@@ -746,18 +747,24 @@ option .control_text {
   padding: 0;
 }
 
-.hotel_card_text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
-  margin: 0;
-  margin-bottom: 16px;
-}
-
 .hotel_card_price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
+  margin-bottom: 16px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.price {
+  width: 140px;
+  margin: 0;
+  text-align: right;
+}
+
+.hotel_card_text {
+  width: 140px;
+  margin: 0;
 }
 
 .hotel_button {
