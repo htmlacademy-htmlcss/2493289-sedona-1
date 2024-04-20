@@ -799,12 +799,26 @@ option .control_text {
 
 .hotel_star {
   background-image: url("../images/star.svg");
+  background-repeat: space;
   background-size: 18px 17px;
-  width: 100%;
-
+  /* background-position: center; */
+  width: 140px;
+  height: 17px;
 
   grid-column: 1/2;
   grid-row: 4/5;
+}
+
+.star_four {
+  width: 73px;
+}
+
+.star_three {
+  width: 65px;
+}
+
+.star_two {
+  width: 40px;
 }
 
 .hotel_raiting {
