@@ -147,6 +147,12 @@ body {
   box-sizing: border-box;
 }
 
+.button_brown:hover {
+  background-color: #615048;
+}
+
+
+
 .hero {
   background-image: url("../images/index_background.jpg");
   width: 1200px;
