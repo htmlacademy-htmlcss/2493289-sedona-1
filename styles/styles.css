@@ -32,6 +32,8 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+
+  position: relative;
 }
 
 .visually_hidden {
@@ -58,6 +60,10 @@ body {
 
 .page_header {
   margin: 0 auto;
+
+  position: absolute;
+  z-index: 2;
+  right: 70px;
 }
 
 .navigation_logo {
@@ -160,6 +166,7 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
+
   position: absolute;
   top: 428px;
   left: 0;
@@ -167,6 +174,9 @@ body {
 
 .main_index {
   flex-grow: 1;
+
+  position: relative;
+  top: 64px;
 }
 
 .index_title {
@@ -177,6 +187,8 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+
+
 }
 
 .index_title_advantages {
@@ -474,6 +486,9 @@ body {
 
 .main_catalog {
   flex-grow: 1;
+
+  position: relative;
+  top: 64px;
 }
 
 .catalog_img {
@@ -801,7 +816,7 @@ option .control_text {
   background-image: url("../images/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
-  /* background-position: center; */
+  align-self: center;
   width: 140px;
   height: 17px;
 
