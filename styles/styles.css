@@ -60,10 +60,9 @@ body {
 
 .page_header {
   margin: 0 auto;
-  /*
-  position: absolute;
+
+  position: relative;
   z-index: 2;
-  right: 70px; */
 }
 
 .navigation_logo {
@@ -86,6 +85,7 @@ body {
 .navigation_style2 {
   max-width: 300px;
   margin-left: auto;
+
 }
 
 .navigation_link {
@@ -104,6 +104,10 @@ body {
 .navigation_link_style2 {
   display: block;
   padding: 22px 12px;
+}
+
+.navigation_link_style2 svg {
+  display: block;
 }
 
 .navigation_item {
@@ -152,7 +156,12 @@ body {
   background-color: #615048;
 }
 
-
+.button_brown:active {
+  background-color: #756157;
+  outline: none;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .hero {
   background-image: url("../images/index_background.jpg");
@@ -181,9 +190,6 @@ body {
 
 .main_index {
   flex-grow: 1;
-
-  /* position: relative; */
-  /* margin-top: 64px; */
 }
 
 .index_title {
@@ -441,6 +447,22 @@ body {
   text-align: center;
 }
 
+.button_blue:hover {
+  background-color: #68A2CA;
+}
+
+.button_blue:active {
+  background-color: #68A2CA;
+  outline: none;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_blue:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -493,9 +515,6 @@ body {
 
 .main_catalog {
   flex-grow: 1;
-
-  position: relative;
-  top: 64px;
 }
 
 .catalog_img {
