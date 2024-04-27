@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  position: relative;
+  /* position: relative; */
 }
 
 .visually_hidden {
@@ -60,15 +60,16 @@ body {
 
 .page_header {
   margin: 0 auto;
-
+  /*
   position: absolute;
   z-index: 2;
-  right: 70px;
+  right: 70px; */
 }
 
 .navigation_logo {
   display: block;
   margin-right: 30px;
+  margin-bottom: -6px;
 }
 
 .navigation_list {
@@ -181,8 +182,8 @@ body {
 .main_index {
   flex-grow: 1;
 
-  position: relative;
-  top: 64px;
+  /* position: relative; */
+  /* margin-top: 64px; */
 }
 
 .index_title {
