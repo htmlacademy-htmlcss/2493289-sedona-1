@@ -97,6 +97,16 @@ body {
   text-decoration: none;
 }
 
+.navigation_link_active::before {
+  content: "";
+  background-color: #756257;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+}
+
 .navigation_link_style1 {
   padding: 20px 16px;
 }
@@ -152,16 +162,21 @@ body {
   box-sizing: border-box;
 }
 
-.button_brown:hover {
-  background-color: #615048;
-}
-
 .button_brown:active {
   background-color: #756157;
   outline: none;
   cursor: default;
   color: rgba(255, 255, 255, 0.3);
 }
+
+.button_brown:hover {
+  background-color: #615048;
+}
+
+.button_brown:focus {
+  background-color: #615048;
+}
+
 
 .hero {
   background-image: url("../images/index_background.jpg");
@@ -447,10 +462,6 @@ body {
   text-align: center;
 }
 
-.button_blue:hover {
-  background-color: #68A2CA;
-}
-
 .button_blue:active {
   background-color: #68A2CA;
   outline: none;
@@ -458,9 +469,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button_blue:disabled {
-  background-color: #E5E5E5;
-  color: #ffffff;
+.button_blue:hover {
+  background-color: #68A2CA;
+}
+
+.button_blue:focus {
+  background-color: #68A2CA;
 }
 
 .footer {
@@ -487,16 +501,31 @@ body {
 
 .style_vk {
   padding: 13px 12px;
+  fill: #83B3D3;
 }
+
 
 .style_telegram {
   padding: 12px 14px;
+  fill: #83B3D3;
 }
 
 .style_youtube {
   padding: 12px 12px;
+  fill: #83B3D3;
 }
 
+.style_svg:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.style_svg:hover {
+  fill: #68A2CA;
+}
+
+.style_svg:focus {
+  fill: #68A2CA;
+}
 
 .footer_contacts_phone {
   font-weight: 400;
@@ -508,10 +537,39 @@ body {
   padding: 5px 0;
 }
 
+.footer_contacts_phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer_contacts_phone:hover {
+  color: #756157;
+}
+
+.footer_contacts_phone:focus {
+  color: #756157;
+}
+
 .htmlacademy_link {
   display: block;
   padding: 8px 0;
 }
+
+.style_academy {
+  fill: #000000;
+}
+
+.style_academy:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.style_academy:hover {
+  fill: #756157;
+}
+
+.style_academy:focus {
+  fill: #756157;
+}
+
 
 .main_catalog {
   flex-grow: 1;
