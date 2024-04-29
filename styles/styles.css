@@ -787,6 +787,7 @@ option .control_text {
 }
 
 .select_control {
+  width: 292px;
   font: inherit;
   padding: 12px 20px;
   border: 2px solid #E5E5E5;
@@ -795,6 +796,11 @@ option .control_text {
   color: #000000;
   box-sizing: border-box;
   appearance: none;
+  color: #333333;
+
+  background-image: url("../images/Vector_selector.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 
