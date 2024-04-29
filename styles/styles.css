@@ -790,10 +790,10 @@ option .control_text {
   width: 292px;
   font: inherit;
   padding: 12px 20px;
+  padding-right: 40px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0 70px;
-  color: #000000;
   box-sizing: border-box;
   appearance: none;
   color: #333333;
@@ -810,6 +810,7 @@ option .control_text {
 
 .select_control:focus {
   border: 2px solid #3F5E72;
+  outline: none;
 }
 
 .select_control:active {
@@ -817,8 +818,9 @@ option .control_text {
 }
 
 .select_control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #333333;
+  color: #333333;
+  opacity: 0.3;
 }
 
 .button_visually {
