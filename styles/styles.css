@@ -294,17 +294,18 @@ body {
   margin-bottom: 62px;
 }
 
-.decore_title:before {
+.decore_title:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
   position: absolute;
   bottom: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
 }
 
-.decore_title:before:not(.title_extended) {
+.decore_title:before:not(.advantages_item_extended) {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -880,10 +881,6 @@ option .control_text {
   border-color: #000000;
 }
 
-.list_button_style:active {
-  border-color: #000000;
-}
-
 .list_button_visually {
   display: flex;
   max-width: 160px;
@@ -1002,6 +999,10 @@ option .control_text {
   grid-row: 4/5;
 }
 
+.star_five {
+  width: 95px;
+}
+
 .star_four {
   width: 73px;
 }
@@ -1012,6 +1013,10 @@ option .control_text {
 
 .star_two {
   width: 40px;
+}
+
+.star_one {
+  width: 17px;
 }
 
 .hotel_raiting {
