@@ -905,7 +905,7 @@ option .control_text {
 .hotel_list {
   width: 1060px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding: 0 70px;
 
   display: grid;
@@ -1040,8 +1040,11 @@ option .control_text {
   flex-wrap: wrap;
   gap: 8px;
   width: 1060;
-  padding: 0;
-  margin: 0 70px 60px;
+  padding: 39px 0 60px;
+  margin: 0 70px;
+  border-top: 1px solid #E6E6E6;
+
+  border
 }
 
 
