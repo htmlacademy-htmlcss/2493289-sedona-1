@@ -230,9 +230,7 @@ body {
 }
 
 .style_advantages {
-  height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-
 }
 
 .index_title_text {
@@ -282,6 +280,8 @@ body {
   align-items: center;
   width: 400px;
   padding: 90px 85px;
+
+  position: relative;
 }
 
 .advantages_item_title {
@@ -292,6 +292,20 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 62px;
+}
+
+.decore_title:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateX(-50%);
+}
+
+.decore_title:before:not(.title_extended) {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages_text {
