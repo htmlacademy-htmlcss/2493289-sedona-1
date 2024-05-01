@@ -994,6 +994,7 @@ option .control_text {
   align-self: center;
   width: 140px;
   height: 17px;
+  width: 106px;
 
   grid-column: 1/2;
   grid-row: 4/5;
@@ -1004,11 +1005,11 @@ option .control_text {
 }
 
 .star_four {
-  width: 73px;
+  width: 87px;
 }
 
 .star_three {
-  width: 65px;
+  width: 68px;
 }
 
 .star_two {
@@ -1016,7 +1017,7 @@ option .control_text {
 }
 
 .star_one {
-  width: 17px;
+  width: 18px;
 }
 
 .hotel_raiting {
