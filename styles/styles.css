@@ -293,7 +293,7 @@ body {
   margin-bottom: 62px;
 }
 
-.advantages_item_title::after {
+.decore_title::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
@@ -301,6 +301,8 @@ body {
   position: absolute;
   /* bottom: 32px; */
 }
+
+
 
 .advantages_text {
   font-weight: 400;
