@@ -279,6 +279,8 @@ body {
   align-items: center;
   width: 400px;
   padding: 90px 85px;
+
+  position: relative;
 }
 
 .advantages_item_title {
@@ -291,13 +293,21 @@ body {
   margin-bottom: 62px;
 }
 
-.decore_title::after {
+.advantages_item_title::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
   position: absolute;
   /* bottom: 32px; */
+}
+
+.advantages_item:not(.advantages_item_wrapper)::after {
+  content: "";
+  background-color: tomato;
+  width: 60px;
+  height: 2px;
+  position: absolute;
 }
 
 .advantages_text {
