@@ -302,14 +302,6 @@ body {
   /* bottom: 32px; */
 }
 
-.advantages_item:not(.advantages_item_wrapper)::after {
-  content: "";
-  background-color: tomato;
-  width: 60px;
-  height: 2px;
-  position: absolute;
-}
-
 .advantages_text {
   font-weight: 400;
   font-size: 18px;
