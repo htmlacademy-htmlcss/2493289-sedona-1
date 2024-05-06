@@ -279,8 +279,6 @@ body {
   align-items: center;
   width: 400px;
   padding: 90px 85px;
-
-  position: relative;
 }
 
 .advantages_item_title {
@@ -290,7 +288,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
+
+  position: relative;
 }
 
 .decore_title::after {
@@ -298,8 +298,10 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
+  /* top: 86px;
+  left: 30px; */
+
   position: absolute;
-  /* bottom: 32px; */
 }
 
 
