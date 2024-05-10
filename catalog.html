@@ -127,15 +127,17 @@
           <div class="container_filter">
             <h2 class="visually_hidden">Результат поиска гостиниц</h2>
             <p class="result_filter_text">Найдено гостиниц: 38</p>
-            <select class="select_control">
-              <option>Сначала дешёвые</option>
-              <option>Сначала дорогие</option>
-              <option>Сначала популярные</option>
-            </select>
+            <div class="select_control_style">
+              <select class="select_control">
+                <option>Сначала дешёвые</option>
+                <option>Сначала дорогие</option>
+                <option>Сначала популярные</option>
+              </select>
+            </div>
             <ul class="list_button_visually">
               <li class="item_button_visually style_list">
-                <a class="button_cheap button_visually list_button_style" href="#">
-                  <span class="visually_hidden">Показать карточки гостиниц блоками</span>
+                <a class="button_cheap button_visually list_button_style button_cheap_active" href="#">
+                  <span class="visually_hidden ">Показать карточки гостиниц блоками</span>
                 </a>
               </li>
               <li class="item_button_visually style_list">
@@ -178,7 +180,7 @@
               </p>
               <span class="price">От 5000 ₽</span>
               <a class="hotel_button_detail button_brown" href="#">подробнее</a>
-              <a class="hotel_button_favorite button_green" href="#">в избранное</a>
+              <a class="hotel_button_favorite button_green hotel_button_favorite_active" href="#">в избранном</a>
               <div class="hotel_star star_four"><span class="visually_hidden">Рейтинг гостиницы, 4 звезды</span></div>
               <p class="hotel_raiting">Рейтинг: 9,2</p>
             </li>

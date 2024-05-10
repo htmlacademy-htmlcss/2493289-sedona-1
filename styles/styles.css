@@ -123,18 +123,20 @@ body {
 }
 
 .number_of_favorites {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   box-sizing: border-box;
   color: #ffffff;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1;
+  line-height: 1.2;
   border-radius: 10px;
   min-width: 20px;
-  height: auto;
+  height: 20px;
   background-color: #7DB54F;
   padding: 4px;
-  text-align: center;
+
   position: absolute;
   top: 11px;
   right: 4px;
@@ -337,7 +339,6 @@ body {
   width: 400px;
   min-height: 385px;
   background-repeat: no-repeat;
-  background-position: center 81px;
 }
 
 .service_title_item {
@@ -363,14 +364,17 @@ body {
 
 .service_home {
   background-image: url("../images/Advantage_icon_home.svg");
+  background-position: center 81px;
 }
 
 .service_eat {
   background-image: url("../images/Advantage_icon_eat.svg");
+  background-position: center 82px;
 }
 
 .service_present {
   background-image: url("../images/Advantage_icon_present.svg");
+  background-position: center 79px;
 }
 
 .service_list {
@@ -834,9 +838,25 @@ option .control_text {
   appearance: none;
   color: #333333;
 
+  /* background-image: url("../images/vector_selector.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center; */
+}
+
+.select_control_style {
+  position: relative;
+}
+
+.select_control_style::before {
+  content: "";
   background-image: url("../images/vector_selector.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  width: 12px;
+  height: 8px;
+  right: 90px;
+  top: 21px;
+
+  position: absolute;
 }
 
 .select_control:hover {
@@ -887,6 +907,11 @@ option .control_text {
   gap: 8px;
   padding: 0;
   margin: 0;
+}
+
+.button_cheap_active {
+  border-color: #000000;
+  pointer-events: none;
 }
 
 .button_cheap {
@@ -982,12 +1007,17 @@ option .control_text {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 20px;
+  padding: 8px 18px;
   width: 140px;
   min-height: 36px;
   background-color: #82B3D3;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.hotel_button_favorite_active {
+  background-color: #7DB54F;
+  pointer-events: none;
 }
 
 .hotel_star {
