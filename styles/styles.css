@@ -58,11 +58,15 @@ body {
 
 .page_header {
   margin: 0 auto;
+
+  position: relative;
+  z-index: 2;
 }
 
 .navigation_logo {
   display: block;
   margin-right: 30px;
+  margin-bottom: -6px;
 }
 
 .navigation_list {
@@ -79,6 +83,7 @@ body {
 .navigation_style2 {
   max-width: 300px;
   margin-left: auto;
+
 }
 
 .navigation_link {
@@ -90,6 +95,16 @@ body {
   text-decoration: none;
 }
 
+.navigation_link_active::before {
+  content: "";
+  background-color: #756257;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+  right: 16px;
+}
+
 .navigation_link_style1 {
   padding: 20px 16px;
 }
@@ -97,6 +112,10 @@ body {
 .navigation_link_style2 {
   display: block;
   padding: 22px 12px;
+}
+
+.navigation_link_style2 svg {
+  display: block;
 }
 
 .navigation_item {
@@ -138,8 +157,30 @@ body {
   background-color: #756157;
   margin-top: 14px;
   margin-bottom: 14px;
+  margin-left: 20px;
   box-sizing: border-box;
 }
+
+.button_brown:hover {
+  background-color: #615048;
+}
+
+.button_brown:focus {
+  background-color: #615048;
+}
+
+.button_brown:active {
+  background-color: #756157;
+  outline: none;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_brown:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
+
 
 .hero {
   background-image: url("../images/index_background.jpg");
@@ -160,6 +201,7 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 57px;
+
   position: absolute;
   top: 428px;
   left: 0;
@@ -177,11 +219,17 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+
+
 }
 
 .index_title_advantages {
   padding: 0 150px;
   margin-bottom: 25px;
+}
+
+.style_advantages {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .index_title_text {
@@ -240,7 +288,25 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
+
+  position: relative;
+}
+
+.advantages_item_title::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 2px;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  position: absolute;
+}
+
+.advantages_item_extended .advantages_item_title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages_text {
@@ -394,16 +460,17 @@ body {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 4px 0 0 4px;
-  border-color: #ffffff;
+  border-color: #f2f2f2;
   border: none;
   width: 452px;
   height: 52px;
-  padding-left: 20px;
-  padding-right: 150px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 150px 14px 14px;
   background-color: #f2f2f2;
   box-sizing: border-box;
+}
+
+.field:hover {
+  font-weight: 700;
 }
 
 .button_subscribe {
@@ -417,9 +484,32 @@ body {
   width: 232px;
   height: 52px;
   padding: 8px 16px;
-  background-color: #82b3d3;
+  background-color: #83B3D3;
   box-sizing: border-box;
   text-align: center;
+}
+
+/* .button_blue:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+} */
+
+.button_blue:hover {
+  background-color: #68A2CA;
+}
+
+.button_blue:focus {
+  background-color: #68A2CA;
+}
+
+.button_blue:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_blue:disabled {
+  background-color: #E5E5E5;
+  color: inherit;
 }
 
 .footer {
@@ -428,6 +518,14 @@ body {
   min-width: 1060px;
   margin: 0 auto;
   padding: 40px 70px 30px;
+}
+
+.button_green:hover {
+  background-color: #6C9E42;
+}
+
+.button_green:focus {
+  background-color: #7DB54F;
 }
 
 .footer_social_list {
@@ -446,16 +544,31 @@ body {
 
 .style_vk {
   padding: 13px 12px;
+  fill: #83B3D3;
 }
+
 
 .style_telegram {
   padding: 12px 14px;
+  fill: #83B3D3;
 }
 
 .style_youtube {
   padding: 12px 12px;
+  fill: #83B3D3;
 }
 
+.style_svg:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.style_svg:hover {
+  fill: #68A2CA;
+}
+
+.style_svg:focus {
+  fill: #68A2CA;
+}
 
 .footer_contacts_phone {
   font-weight: 400;
@@ -467,10 +580,39 @@ body {
   padding: 5px 0;
 }
 
+.footer_contacts_phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer_contacts_phone:hover {
+  color: #756157;
+}
+
+.footer_contacts_phone:focus {
+  color: #756157;
+}
+
 .htmlacademy_link {
   display: block;
   padding: 8px 0;
 }
+
+.style_academy {
+  fill: #000000;
+}
+
+.style_academy:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.style_academy:hover {
+  fill: #756157;
+}
+
+.style_academy:focus {
+  fill: #756157;
+}
+
 
 .main_catalog {
   flex-grow: 1;
@@ -527,6 +669,8 @@ body {
   min-width: 114px;
   padding: 0;
   margin: 0;
+
+  position: relative;
 }
 
 .catalog_header {
@@ -536,16 +680,24 @@ body {
 .breadcrumbs_item {
   margin: 0;
   padding: 0;
+  align-content: center;
+}
+
+.style_decore {
+  background-image: url("../images/bread_crumbs.svg");
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 19px;
+  display: block;
+  margin-right: 10px;
 }
 
 .button_image_breadcrumbs {
   display: block;
-  width: 13px;
-  height: 15px;
-  padding: 3px 0;
-  padding-right: 30px;
   margin: 0;
-  margin-right: 30px;
+  fill: #ffffff;
+  padding-top: 3px;
+  margin-right: 10px;
 }
 
 .breadcrumbs_link {
@@ -575,10 +727,6 @@ body {
 .infrastructure_item:last-child {
   margin-bottom: 0;
 }
-
-/* .control_input {
-  accent-color: #3F5E72;
-} */
 
 .catalog_filter_title {
   font-weight: 700;
@@ -633,6 +781,18 @@ body {
   background-color: transparent;
 }
 
+.button_reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_reset:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_reset:focus {
+  color: #ffffff;
+}
+
 .result_filter {
   display: flex;
   flex-direction: column;
@@ -663,14 +823,39 @@ option .control_text {
 }
 
 .select_control {
+  width: 292px;
   font: inherit;
-  padding-left: 20px;
-  padding-right: 100px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 12px 20px;
+  padding-right: 40px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0 70px;
+  box-sizing: border-box;
+  appearance: none;
+  color: #333333;
+
+  background-image: url("../images/vector_selector.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select_control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:focus {
+  border: 2px solid #3F5E72;
+  outline: none;
+}
+
+.select_control:active {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:disabled {
+  border: 2px solid #333333;
+  color: #333333;
+  opacity: 0.3;
 }
 
 .button_visually {
@@ -687,7 +872,11 @@ option .control_text {
   border-radius: 4px;
 }
 
-.button_cheap_active {
+.list_button_style:hover {
+  border-color: #68A2CA;
+}
+
+.list_button_style:focus {
   border-color: #000000;
 }
 
@@ -715,7 +904,7 @@ option .control_text {
 .hotel_list {
   width: 1060px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding: 0 70px;
 
   display: grid;
@@ -733,6 +922,10 @@ option .control_text {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 16px 20px;
+}
+
+.hotel_card_item:hover {
+  border: 1px solid #68A2CA;
 }
 
 .hotel_card_link {
@@ -801,24 +994,33 @@ option .control_text {
   background-image: url("../images/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
-  /* background-position: center; */
+  align-self: center;
   width: 140px;
   height: 17px;
+  width: 106px;
 
   grid-column: 1/2;
   grid-row: 4/5;
 }
 
+.star_five {
+  width: 95px;
+}
+
 .star_four {
-  width: 73px;
+  width: 87px;
 }
 
 .star_three {
-  width: 65px;
+  width: 68px;
 }
 
 .star_two {
   width: 40px;
+}
+
+.star_one {
+  width: 18px;
 }
 
 .hotel_raiting {
@@ -841,8 +1043,11 @@ option .control_text {
   flex-wrap: wrap;
   gap: 8px;
   width: 1060;
-  padding: 0;
-  margin: 0 70px 60px;
+  padding: 39px 0 60px;
+  margin: 0 70px;
+  border-top: 1px solid #E6E6E6;
+
+  border
 }
 
 
