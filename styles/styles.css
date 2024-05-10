@@ -293,21 +293,21 @@ body {
   position: relative;
 }
 
-.decore_title::after {
+.advantages_item_title::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform: translateX(50%);
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
 
   position: absolute;
 }
 
-
+.advantages_item_extended .advantages_item_title::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .advantages_text {
   font-weight: 400;
@@ -694,10 +694,9 @@ body {
 
 .button_image_breadcrumbs {
   display: block;
-  width: 13px;
-  height: 15px;
   margin: 0;
   fill: #ffffff;
+  padding-top: 3px;
   margin-right: 10px;
 }
 
