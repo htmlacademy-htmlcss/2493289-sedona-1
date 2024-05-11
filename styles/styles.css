@@ -724,6 +724,43 @@ body {
   margin-bottom: 32px;
 }
 
+.style_price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  border: none;
+  width: 143px;
+  height: 48px;
+  padding: 12px 40px 12px 20px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+
+}
+
+.wrapper_style_price {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  max-width: 288px;
+}
+
+.style_price::-webkit-outer-spin-button,
+.style_price::-webkit-inner-spin-button,
+.style_price::-webkit-input-placeholder {
+  appearance: none;
+  margin: 0;
+  color: #000000;
+}
+
+.style_price_left {
+  border-radius: 4px 0 0 4px;
+
+}
+
+.style_price_right {
+  border-radius: 0 4px 4px 0;
+}
+
 .infrastructure_item {
   margin-bottom: 16px;
 }
@@ -837,10 +874,6 @@ option .control_text {
   box-sizing: border-box;
   appearance: none;
   color: #333333;
-
-  /* background-image: url("../images/vector_selector.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center; */
 }
 
 .select_control_style {
