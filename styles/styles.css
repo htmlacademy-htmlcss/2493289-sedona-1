@@ -762,12 +762,24 @@ body {
 
 .wrapper_style_price::after {
   content: "";
-  background-image: url("../images/test.svg");
+  background-image: url("../images/input_text_ot.svg");
   background-repeat: no-repeat;
   width: 17px;
   height: 24px;
   left: 106px;
   bottom: 4px;
+
+  position: absolute;
+}
+
+.wrapper_style_price::before {
+  content: "";
+  background-image: url("../images/input_text_do.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 24px;
+  left: 250px;
+  bottom: 11px;
 
   position: absolute;
 }
