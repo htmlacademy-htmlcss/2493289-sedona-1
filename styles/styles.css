@@ -742,6 +742,8 @@ body {
   flex-direction: row;
   gap: 2px;
   max-width: 288px;
+
+  position: relative;
 }
 
 .style_price::-webkit-outer-spin-button,
@@ -755,6 +757,19 @@ body {
 .style_price_left {
   border-radius: 4px 0 0 4px;
 
+  position: relative;
+}
+
+.wrapper_style_price::after {
+  content: "";
+  background-image: url("../images/test.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 24px;
+  left: 106px;
+  bottom: 4px;
+
+  position: absolute;
 }
 
 .style_price_right {
