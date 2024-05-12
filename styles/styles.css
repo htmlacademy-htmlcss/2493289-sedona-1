@@ -1437,13 +1437,31 @@ option .control_text {
   color: #FFFFFF;
   box-shadow: 0 15px 30px 0 #000000;
   z-index: 1;
-  display: block;
   box-sizing: border-box;
   top: 52px;
   left: -54px;
+  display: none;
 
   position: absolute;
 }
+
+.tooltip-text::before {
+  content: "";
+  background-image: url("../images/arrow_toogle.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+
+  position: absolute;
+  top: -9px;
+  left: 116px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 
 .style_form_number_adults_child {
   display: flex;
@@ -1494,3 +1512,31 @@ option .control_text {
 
   position: absolute;
 }
+
+.svg_toogle {
+  fill: #83B3D3;
+}
+
+.check:hover {
+  border: 1px solid #000000;
+}
+
+
+/* .select_control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:focus {
+  border: 2px solid #3F5E72;
+  outline: none;
+}
+
+.select_control:active {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:disabled {
+  border: 2px solid #333333;
+  color: #333333;
+  opacity: 0.3;
+} */
