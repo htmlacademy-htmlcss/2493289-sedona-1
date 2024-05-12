@@ -815,7 +815,7 @@ body {
 
 .wrapper_style_price::after {
   content: "";
-  background-image: url("../images/input_text_ot.svg");
+  background-image: url("../images/input_ot.svg");
   background-repeat: no-repeat;
   width: 17px;
   height: 24px;
@@ -827,12 +827,12 @@ body {
 
 .wrapper_style_price::before {
   content: "";
-  background-image: url("../images/input_text_do.svg");
+  background-image: url("../images/input_do.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 24px;
   left: 250px;
-  bottom: 11px;
+  bottom: 4px;
 
   position: absolute;
 }
@@ -1260,12 +1260,17 @@ option .control_text {
   margin: auto;
 }
 
+/* .modal_container_close {
+  display: none;
+} */
+
 .modal {
   padding: 64px 70px;
   min-width: 717px;
   background-color: #FFFFFF;
   margin: auto;
   border-radius: 30px;
+  box-sizing: border-box;
 
   position: relative;
 }
@@ -1294,4 +1299,53 @@ option .control_text {
   line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 64px;
+}
+
+.label_modal_date {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #000000;
+  min-width: 137px;
+  box-sizing: border-box;
+  padding: 12px 15px 12px 0;
+}
+
+.check {
+  background-color: #F2F2F2;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  padding: 12px 255px 12px 20px;
+  box-sizing: border-box;
+  width: 440px;
+  border-radius: 4px;
+}
+
+.style_input_date {
+  display: flex;
+  width: 577px;
+  height: 48px;
+  margin-bottom: 48px;
+
+  position: relative;
+}
+
+.style_input_date::after {
+  content: "";
+  background-image: url("../images/vector_calendar_modal.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+
+.button_modal {
+  width: 577px;
 }
