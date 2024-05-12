@@ -1348,6 +1348,7 @@ option .control_text {
 
 .button_modal {
   width: 577px;
+  margin: 0;
 }
 
 .adult_title {
@@ -1371,14 +1372,16 @@ option .control_text {
   line-height: 1.11;
   box-sizing: border-box;
   padding: 14px 10px;
+  background-color: #F2F2F2;
 }
 
 .vector_modal {
   width: 40px;
   height: 48px;
   box-sizing: border-box;
-  color: rgba(117, 97, 87, 0.3);
+  background-color: #F2F2F2;
   padding: 23px 13px;
+  border: none;
 }
 
 .adult_child_number {
@@ -1389,4 +1392,48 @@ option .control_text {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+}
+
+.minus {
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.minus::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  right: 13px;
+  top: 23px;
+
+  position: absolute;
+}
+
+.plus {
+  border-radius: 0 4px 4px 0;
+  position: relative;
+}
+
+.plus::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  left: 13px;
+  top: 23px;
+
+  position: absolute;
+}
+
+.plus::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(90deg);
+  left: 13px;
+  top: 23px;
+
+  position: absolute;
 }
