@@ -857,6 +857,8 @@ body {
   margin-bottom: 0;
 }
 
+.control_input {}
+
 .catalog_filter_title {
   font-weight: 700;
   font-size: 20px;
