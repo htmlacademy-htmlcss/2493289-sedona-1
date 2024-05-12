@@ -1325,6 +1325,11 @@ option .control_text {
   border-radius: 4px;
 }
 
+.check::placeholder {
+  color: #000000;
+}
+
+
 .style_input_date {
   display: flex;
   width: 577px;
@@ -1346,12 +1351,29 @@ option .control_text {
   top: 14px;
 }
 
+.modal_hint {
+  position: absolute;
+  top: 48px;
+  right: 140px;
+  padding-top: 4px;
+  color: #FF5757;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.hint_checkout {
+  color: #333333;
+  right: 89px;
+}
+
 .button_modal {
   width: 577px;
+  height: 60px;
   margin: 0;
 }
 
-.adult_title {
+.title_form_number_adults_child {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -1360,8 +1382,12 @@ option .control_text {
   padding: 12px 46px 12px 0;
 }
 
+.title_child {
+  padding: 12px 82px 12px 0;
+}
+
 .group_adults {
-  padding: 14px 10px;
+  padding: 14px 5px;
   border: none;
   max-width: 31px;
   height: 48px;
@@ -1371,7 +1397,6 @@ option .control_text {
   font-size: 18px;
   line-height: 1.11;
   box-sizing: border-box;
-  padding: 14px 10px;
   background-color: #F2F2F2;
 }
 
