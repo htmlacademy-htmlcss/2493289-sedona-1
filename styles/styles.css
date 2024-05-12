@@ -1349,3 +1349,44 @@ option .control_text {
 .button_modal {
   width: 577px;
 }
+
+.adult_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 12px 46px 12px 0;
+}
+
+.group_adults {
+  padding: 14px 10px;
+  border: none;
+  max-width: 31px;
+  height: 48px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  box-sizing: border-box;
+  padding: 14px 10px;
+}
+
+.vector_modal {
+  width: 40px;
+  height: 48px;
+  box-sizing: border-box;
+  color: rgba(117, 97, 87, 0.3);
+  padding: 23px 13px;
+}
+
+.adult_child_number {
+  display: flex;
+}
+
+.style_form_number_adults_child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
