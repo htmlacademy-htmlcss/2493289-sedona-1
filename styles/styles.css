@@ -1384,6 +1384,26 @@ option .control_text {
 
 .title_child {
   padding: 12px 82px 12px 0;
+
+  position: relative;
+}
+
+.title_child::after {
+  content: "";
+  background-image: url("../images/vector_tultip.svg");
+  background-repeat: no-repeat;
+  background-color: #83B3D3;
+  background-position: center 7px;
+  padding: 7px 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  display: block;
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom: 10px;
+  left: 59px;
 }
 
 .group_adults {
