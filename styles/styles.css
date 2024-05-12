@@ -1265,4 +1265,33 @@ option .control_text {
   min-width: 717px;
   background-color: #FFFFFF;
   margin: auto;
+  border-radius: 30px;
+
+  position: relative;
+}
+
+.button_close {
+  background-image: url("../images/vector_close_modal.svg");
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+  background-position: center 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  top: 64px;
+  right: 52px;
+
+  position: absolute;
+}
+
+.modal_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
 }
