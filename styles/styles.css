@@ -871,6 +871,10 @@ body {
   display: block;
 }
 
+.control:hover {
+  opacity: 0.8
+}
+
 .control_mark_infrastructure {
   width: 20px;
   height: 20px;
@@ -894,11 +898,6 @@ body {
   top: 5px;
 }
 
-.control:hover .control_mark_infrastructure,
-.control:hover .control_mark_home {
-  opacity: 0.8;
-}
-
 .control_mark_home {
   width: 20px;
   height: 20px;
@@ -920,6 +919,12 @@ body {
   position: absolute;
   left: 5px;
   top: 5px;
+}
+
+
+.control_input:focus + .control_mark_home,
+.control_input:focus + .control_mark_infrastructure {
+  border: 3px solid #83B3D3;
 }
 
 .catalog_filter_title {
