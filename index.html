@@ -223,6 +223,68 @@
           </svg>
         </a>
       </footer>
+      <div class="modal_container modal_container_close">
+        <div class="modal">
+          <button class="button_close">
+            <span class="visually_hidden">Закрыть</span>
+          </button>
+          <section>
+            <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+            <form class="index_model_form" action="https://echo.htmlacademy.ru" method="get">
+              <div class="style_input_date">
+                <label class="label_modal_date" for="id_checkin">
+                  Дата Заезда:
+                </label>
+                <input class="check" type="text" name="date_checkin" placeholder="27 апреля 2020" id="id_checkin">
+                <span class="modal_hint">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="style_input_date">
+                <label class="label_modal_date" for="id_checkout">
+                  Дата Выезда:
+                </label>
+                <input class="check" type="text" name="date_checkout" placeholder="1 сентября 2023" id="id_checkout">
+                <span class="modal_hint hint_checkout">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="style_form_number_adults_child">
+                <div class="adult_child_number">
+                  <span class="title_form_number_adults_child">Взрослые:</span>
+                  <button class="vector_modal minus">
+                    <span class="visually_hidden">Минус</span>
+                  </button>
+                  <input class="group_adults" type="text" value="2" />
+                  <button class="vector_modal plus">
+                    <span class="visually_hidden">Плюс</span>
+                  </button>
+                </div>
+                <div class="adult_child_number">
+                  <span class="title_form_number_adults_child title_child">Дети:</span>
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="style_svg svg_toogle" width="26" height="26" viewBox="0 0 26 26"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до
+                    18
+                    лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                  </span>
+                  <button class="vector_modal minus">
+                    <span class="visually_hidden">Минус</span>
+                  </button>
+                  <input class="group_adults" type="text" value="2" />
+                  <button class="vector_modal plus">
+                    <span class="visually_hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <button class="button_apply button_modal button_blue" type="submit">Найти</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
