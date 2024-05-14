@@ -924,7 +924,7 @@ body {
 
 .control_input:focus + .control_mark_home,
 .control_input:focus + .control_mark_infrastructure {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .catalog_filter_title {
