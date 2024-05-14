@@ -149,8 +149,14 @@
                   Стоимость, ₽:
                 </legend>
                 <div class="wrapper_style_price">
-                  <input class="style_price style_price_left" type="number" name="price_min" value="0">
-                  <input class="style_price style_price_right" type="number" name="price_max" value="9000">
+                  <label>
+                    <input class="style_price style_price_left" type="number" name="price_min" value="0">
+                    <span class="price_text price_text_ot">от</span>
+                  </label>
+                  <label>
+                    <input class="style_price style_price_right" type="number" name="price_max" value="9000">
+                    <span class="price_text price_text_do">до</span>
+                  </label>
                 </div>
                 <div class="range_bar range_bar_scale_price">
                   <button class="range_toogle range_toogle_min" type="button">

@@ -32,8 +32,6 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-
-  /* position: relative; */
 }
 
 .visually_hidden {
@@ -223,8 +221,6 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-
-
 }
 
 .index_title_advantages {
@@ -365,17 +361,17 @@ body {
 }
 
 .service_home {
-  background-image: url("../images/Advantage_icon_home.svg");
+  background-image: url("../images/advantage_icon_home.svg");
   background-position: center 81px;
 }
 
 .service_eat {
-  background-image: url("../images/Advantage_icon_eat.svg");
+  background-image: url("../images/advantage_icon_eat.svg");
   background-position: center 82px;
 }
 
 .service_present {
-  background-image: url("../images/Advantage_icon_present.svg");
+  background-image: url("../images/advantage_icon_present.svg");
   background-position: center 79px;
 }
 
@@ -435,15 +431,12 @@ body {
 }
 
 .subscribe_index {
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-color: #756157;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-
-
 
 .index_title_style {
   color: #ffffff;
@@ -494,11 +487,6 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-
-/* .button_blue:active {
-  background-color: #68A2CA;
-  color: rgba(255, 255, 255, 0.3);
-} */
 
 .button_blue:hover {
   background-color: #68A2CA;
@@ -807,6 +795,24 @@ body {
   position: relative;
 }
 
+.price_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #E5E5E5;
+
+  position: absolute;
+  top: 12px;
+}
+
+.price_text_ot {
+  left: 106px;
+}
+
+.price_text_do {
+  right: 20px;
+}
+
 .style_price::-webkit-outer-spin-button,
 .style_price::-webkit-inner-spin-button,
 .style_price::-webkit-input-placeholder {
@@ -817,32 +823,6 @@ body {
 
 .style_price_left {
   border-radius: 4px 0 0 4px;
-
-  position: relative;
-}
-
-.wrapper_style_price::after {
-  content: "";
-  background-image: url("../images/input_ot.svg");
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 24px;
-  left: 106px;
-  bottom: 4px;
-
-  position: absolute;
-}
-
-.wrapper_style_price::before {
-  content: "";
-  background-image: url("../images/input_do.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 24px;
-  left: 250px;
-  bottom: 4px;
-
-  position: absolute;
 }
 
 .style_price_right {
@@ -1267,8 +1247,6 @@ option .control_text {
   padding: 39px 0 60px;
   margin: 0 70px;
   border-top: 1px solid #E6E6E6;
-
-  border
 }
 
 
