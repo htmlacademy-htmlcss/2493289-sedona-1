@@ -175,14 +175,13 @@ body {
   background-color: #756157;
   outline: none;
   cursor: default;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .button_brown:disabled {
   background-color: #E5E5E5;
   color: #ffffff;
 }
-
 
 .hero {
   background-image: url("../images/index_background.jpg");
@@ -522,6 +521,11 @@ body {
   background-color: #7DB54F;
 }
 
+.button_green:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
+
 .footer_social_list {
   display: flex;
   flex-wrap: wrap;
@@ -552,16 +556,16 @@ body {
   fill: #83B3D3;
 }
 
-.style_svg:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .style_svg:hover {
   fill: #68A2CA;
 }
 
 .style_svg:focus {
   fill: #68A2CA;
+}
+
+.style_svg:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer_contacts_phone {
@@ -676,6 +680,7 @@ body {
   height: 20px;
   border: none;
   background-color: #ffffff;
+  cursor: pointer;
 
   position: relative;
 }
@@ -853,6 +858,10 @@ body {
 
 .control:hover {
   opacity: 0.8
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .control_mark_infrastructure {
@@ -1348,6 +1357,18 @@ option .control_text {
   position: absolute;
 }
 
+.button_close:hover {
+  background-color: #E6E6E6;
+}
+
+.button_close:focus {
+  background-color: #E6E6E6;
+}
+
+.button_close:focus {
+  opacity: 0.3;
+}
+
 .modal_title {
   margin: 0;
   font-weight: 700;
@@ -1383,6 +1404,16 @@ option .control_text {
 
 .check::placeholder {
   color: #000000;
+}
+
+.check:hover {
+  background-color: #E6E6E6;
+}
+
+.check:focus {
+  background-color: #E6E6E6;
+  border: 2px solid #000000;
+  outline: auto;
 }
 
 
@@ -1445,8 +1476,9 @@ option .control_text {
 }
 
 .group_adults {
-  padding: 14px 5px;
+  padding: 0;
   border: none;
+  display: block;
   max-width: 31px;
   height: 48px;
   text-align: center;
@@ -1458,13 +1490,46 @@ option .control_text {
   background-color: #F2F2F2;
 }
 
+.group_adults:hover {
+  background-color: #E6E6E6;
+}
+
+
 .vector_modal {
   width: 40px;
   height: 48px;
   box-sizing: border-box;
   background-color: #F2F2F2;
-  padding: 23px 13px;
   border: none;
+  padding: 0;
+}
+
+.vector_modal:hover {
+  background-color: #E6E6E6;
+}
+
+.style_svg_adult_child_number {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.style_svg_adult_child_number:hover {
+  fill: #000000;
+}
+
+.style_svg_adult_child_number:focus {
+  fill: #000000;
+}
+
+.style_svg_adult_child_number:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.style_svg_adult_child_number_minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.style_svg_adult_child_number_plus {
+  border-radius: 0 4px 4px 0;
 }
 
 .adult_child_number {
@@ -1523,50 +1588,6 @@ option .control_text {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
-}
-
-.minus {
-  border-radius: 4px 0 0 4px;
-  position: relative;
-}
-
-.minus::after {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.3);
-  right: 13px;
-  top: 23px;
-
-  position: absolute;
-}
-
-.plus {
-  border-radius: 0 4px 4px 0;
-  position: relative;
-}
-
-.plus::after {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.3);
-  left: 13px;
-  top: 23px;
-
-  position: absolute;
-}
-
-.plus::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.3);
-  transform: rotate(90deg);
-  left: 13px;
-  top: 23px;
-
-  position: absolute;
 }
 
 .svg_toogle {
