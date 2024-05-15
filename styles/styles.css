@@ -175,14 +175,13 @@ body {
   background-color: #756157;
   outline: none;
   cursor: default;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .button_brown:disabled {
   background-color: #E5E5E5;
   color: #ffffff;
 }
-
 
 .hero {
   background-image: url("../images/index_background.jpg");
@@ -522,6 +521,11 @@ body {
   background-color: #7DB54F;
 }
 
+.button_green:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
+
 .footer_social_list {
   display: flex;
   flex-wrap: wrap;
@@ -552,16 +556,16 @@ body {
   fill: #83B3D3;
 }
 
-.style_svg:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .style_svg:hover {
   fill: #68A2CA;
 }
 
 .style_svg:focus {
   fill: #68A2CA;
+}
+
+.style_svg:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer_contacts_phone {
@@ -1316,9 +1320,9 @@ option .control_text {
   margin: auto;
 }
 
-.modal_container_close {
+/* .modal_container_close {
   display: none;
-}
+} */
 
 .modal {
   padding: 64px 70px;
@@ -1346,6 +1350,18 @@ option .control_text {
   right: 52px;
 
   position: absolute;
+}
+
+.button_close:hover {
+  background-color: #E6E6E6;
+}
+
+.button_close:focus {
+  background-color: #E6E6E6;
+}
+
+.button_close:focus {
+  opacity: 0.3;
 }
 
 .modal_title {
@@ -1383,6 +1399,16 @@ option .control_text {
 
 .check::placeholder {
   color: #000000;
+}
+
+.check:hover {
+  background-color: #E6E6E6;
+}
+
+.check:focus {
+  background-color: #E6E6E6;
+  border: 2px solid #000000;
+  outline: auto;
 }
 
 
