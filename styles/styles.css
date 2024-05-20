@@ -740,11 +740,8 @@ body {
 }
 
 .breadcrumbs_item {
-  display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-content: center;
 
   position: relative;
 }
@@ -761,6 +758,7 @@ body {
 
   position: absolute;
   left: 24px;
+  top: 0;
 }
 
 .breadcrumbs_item:last-child::after {
@@ -1189,10 +1187,12 @@ option .control_text {
 .price {
   margin: 0;
   text-align: right;
+  color: #333333;
 }
 
 .hotel_card_text {
   margin: 0;
+  color: #333333;
 }
 
 .hotel_button_detail {
@@ -1271,6 +1271,7 @@ option .control_text {
   padding: 9px 22px 8px 23px;
   box-sizing: border-box;
   background-color: #F2F2F2;
+  color: #333333;
   border-radius: 4px;
 
   grid-column: 2/3;
@@ -1354,9 +1355,9 @@ option .control_text {
   margin: auto;
 }
 
-.modal_container_close {
+/* .modal_container_close {
   display: none;
-}
+} */
 
 .modal {
   padding: 64px 70px;
@@ -1418,6 +1419,7 @@ option .control_text {
 .check {
   background-color: #F2F2F2;
   border: none;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
@@ -1482,6 +1484,10 @@ option .control_text {
   width: 577px;
   height: 60px;
   margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .title_form_number_adults_child {
@@ -1507,6 +1513,7 @@ option .control_text {
   height: 48px;
   text-align: center;
   color: #000000;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -1534,6 +1541,7 @@ option .control_text {
 
 .style_svg_adult_child_number {
   fill: rgba(117, 97, 87, 0.3);
+  vertical-align: middle;
 }
 
 .style_svg_adult_child_number:hover {
