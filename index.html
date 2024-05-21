@@ -143,7 +143,8 @@
           <p class="index_title_text index_title_text_style ">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
           <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe_email" id="subscribe_email">
+            <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe_email" id="subscribe_email"
+              required>
             <button class="button_subscribe button_blue" type="submit">Подписаться</button>
           </form>
         </section>
@@ -228,7 +229,7 @@
       </footer>
       <div class="modal_container modal_container_close">
         <div class="modal">
-          <button class="button_close">
+          <button class="button_close" type="button">
             <span class="visually_hidden">Закрыть</span>
           </button>
           <section>
@@ -238,14 +239,16 @@
                 <label class="label_modal_date" for="id_checkin">
                   Дата Заезда:
                 </label>
-                <input class="check" type="text" name="date_checkin" placeholder="27 апреля 2020" id="id_checkin">
+                <input class="check" type="text" name="date_checkin" placeholder="27 апреля 2020" id="id_checkin"
+                  required>
                 <span class="modal_hint">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="style_input_date">
                 <label class="label_modal_date" for="id_checkout">
                   Дата Выезда:
                 </label>
-                <input class="check" type="text" name="date_checkout" placeholder="1 сентября 2023" id="id_checkout">
+                <input class="check" type="text" name="date_checkout" placeholder="1 сентября 2023" id="id_checkout"
+                  required>
                 <span class="modal_hint hint_checkout">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="style_form_number_adults_child">
@@ -259,7 +262,7 @@
                       <path d="M0 0v2h14V0H0Z" />
                     </svg>
                   </button>
-                  <input class="group_adults" type="text" value="2" id="id_adults" name="count_adults" />
+                  <input class="group_adults" type="text" value="2" id="id_adults" name="count_adults" required />
                   <button class="vector_modal style_svg_adult_child_number_plus" type="button">
                     <span class="visually_hidden">Увеличение количества</span>
                     <svg class="style_svg_adult_child_number" width="14" height="14" viewBox="0 0 14 14" fill="none"

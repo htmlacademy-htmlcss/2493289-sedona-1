@@ -83,7 +83,7 @@
                   <ul class="infrastructure_list style_list catalog_filter_style">
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="checkbox" name="pool" checked>
+                        <input class="visually_hidden control_input" type="checkbox" name="pool" value="Pool" checked>
                         <span class="control_mark_infrastructure"></span>
                         <span class="text_infrastructure">
                           Бассейн
@@ -92,7 +92,8 @@
                     </li>
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="checkbox" name="parking" checked>
+                        <input class="visually_hidden control_input" type="checkbox" name="parking" value="Parking"
+                          checked>
                         <span class="control_mark_infrastructure"></span>
                         <span class="text_infrastructure">
                           Парковка
@@ -101,7 +102,7 @@
                     </li>
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="checkbox" name="wi_fi">
+                        <input class="visually_hidden control_input" type="checkbox" name="wi_fi" value="Wifi_internet">
                         <span class="control_mark_infrastructure"></span>
                         <span class="text_infrastructure">
                           Wi-Fi
@@ -115,7 +116,8 @@
                   <ul class="infrastructure_list style_list catalog_filter_style">
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="radio" name="type_house" checked>
+                        <input class="visually_hidden control_input" type="radio" name="type_house" value="Hotel"
+                          checked>
                         <span class="control_mark_home"></span>
                         <span class="text_infrastructure">
                           Гостиница
@@ -124,7 +126,7 @@
                     </li>
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="radio" name="type_house">
+                        <input class="visually_hidden control_input" type="radio" name="type_house" value="Motel">
                         <span class="control_mark_home"></span>
                         <span class="text_infrastructure">
                           Мотель
@@ -133,7 +135,7 @@
                     </li>
                     <li class="infrastructure_item catalog_text">
                       <label class="control">
-                        <input class="visually_hidden control_input" type="radio" name="type_house">
+                        <input class="visually_hidden control_input" type="radio" name="type_house" value="Apartments">
                         <span class="control_mark_home"></span>
                         <span class="text_infrastructure">
                           Апартаменты
@@ -268,8 +270,8 @@
               <span class="price">От 1500 ₽</span>
               <a class="hotel_button_detail button button_brown" href="#">подробнее</a>
               <a class="hotel_button_favorite button button_green" href="#">в избранное</a>
-              <div class="hotel_star star_two
-              span class=" visually_hidden">Рейтинг гостиницы, 2 звезды</span>
+              <div class="hotel_star star_two">
+                <span class="visually_hidden">Рейтинг гостиницы, 2 звезды</span>
               </div>
               <p class="hotel_raiting">Рейтинг: 5,0</p>
             </li>
@@ -301,7 +303,8 @@
           <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
           <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe_email" id="subscribe_email">
+            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe_email" id="subscribe_email"
+              required>
             <button class="button button_subscribe button_blue" type="submit">Подписаться</button>
           </form>
         </section>
