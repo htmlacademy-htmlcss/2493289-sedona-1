@@ -196,13 +196,14 @@ body {
   background-image: url("../images/index_background.jpg");
   width: 1200px;
   min-height: 485px;
-  background-color: #756157;
+  background-color: #7DB54F;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 51px 371px 0;
   box-sizing: border-box;
   margin-bottom: 69px;
+
   position: relative;
 }
 
@@ -1355,9 +1356,9 @@ option .control_text {
   margin: auto;
 }
 
-/* .modal_container_close {
+.modal_container_close {
   display: none;
-} */
+}
 
 .modal {
   padding: 64px 70px;
@@ -1570,7 +1571,7 @@ option .control_text {
   position: relative;
 }
 
-.tooltip-toggle {
+.tooltip_toggle {
   position: absolute;
   left: 59px;
   top: 11px;
@@ -1579,7 +1580,8 @@ option .control_text {
   padding: 0;
 }
 
-.tooltip-text {
+.tooltip_text {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1598,7 +1600,7 @@ option .control_text {
   position: absolute;
 }
 
-.tooltip-text::before {
+.tooltip_text::before {
   content: "";
   background-image: url("../images/arrow_toogle.svg");
   background-repeat: no-repeat;
@@ -1610,8 +1612,8 @@ option .control_text {
   left: 116px;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip_toggle:hover + .tooltip_text,
+.tooltip_toggle:focus + .tooltip_text {
   display: block;
 }
 
