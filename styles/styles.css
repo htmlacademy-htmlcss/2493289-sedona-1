@@ -1416,15 +1416,17 @@ option .control_text {
 
 .check {
   background-color: #F2F2F2;
-  border: none;
+  border: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  padding: 12px 255px 12px 20px;
+  padding: 12px 200px 12px 20px;
   box-sizing: border-box;
   width: 440px;
+  min-height: 48px;
   border-radius: 4px;
+  outline: none;
 }
 
 .check::placeholder {
@@ -1437,8 +1439,8 @@ option .control_text {
 
 .check:focus {
   background-color: #E6E6E6;
-  border: 2px solid #000000;
-  /* outline: auto; */
+  outline: 2px solid #000000;
+
 }
 
 .style_input_date {
