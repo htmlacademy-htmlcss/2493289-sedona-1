@@ -1353,9 +1353,9 @@ option .control_text {
   margin: auto;
 }
 
-/* .modal_container_close {
+.modal_container_close {
   display: none;
-} */
+}
 
 .modal {
   padding: 64px 70px;
@@ -1394,13 +1394,15 @@ option .control_text {
 }
 
 .modal_title {
-  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 64px;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0 80px 16px 0;
+  width: 450px;
 }
 
 .label_modal_date {
@@ -1412,6 +1414,7 @@ option .control_text {
   min-width: 137px;
   box-sizing: border-box;
   padding: 12px 15px 12px 0;
+  width: 120px;
 }
 
 .check {
@@ -1421,7 +1424,7 @@ option .control_text {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  padding: 12px 200px 12px 20px;
+  padding: 12px 150px 12px 20px;
   box-sizing: border-box;
   width: 440px;
   min-height: 48px;
@@ -1444,12 +1447,16 @@ option .control_text {
 }
 
 .style_input_date {
-  display: flex;
   width: 577px;
-  height: 48px;
+  min-height: 48px;
   margin-bottom: 48px;
 
   position: relative;
+}
+
+.style_input_modal {
+  display: flex;
+  margin-bottom: 4px;
 }
 
 .style_input_date::after {
@@ -1465,10 +1472,9 @@ option .control_text {
 }
 
 .modal_hint {
-  position: absolute;
-  top: 48px;
-  right: 140px;
-  padding-top: 4px;
+  padding: 0 20px 0 20px;
+  margin-left: 137px;
+  width: 250px;
   color: #FF5757;
   font-weight: 400;
   font-size: 16px;
