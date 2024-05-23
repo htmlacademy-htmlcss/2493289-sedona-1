@@ -656,6 +656,7 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
+  min-width: 150px;
 }
 
 .catalog_filter_group_price {
@@ -665,7 +666,7 @@ body {
 .style_infrastructure {
   display: flex;
   column-gap: 70px;
-  margin-right: 140px;
+  margin-right: 141px;
 }
 
 .range_bar {
@@ -705,7 +706,7 @@ body {
 .range_toogle_max {
   position: absolute;
   top: -9px;
-  left: 202px;
+  left: 200px;
 }
 
 .catalog_filter_style {
