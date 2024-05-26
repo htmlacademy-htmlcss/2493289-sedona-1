@@ -185,7 +185,8 @@ body {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.button_brown:disabled {
+.button_brown:disabled,
+.button_brown.disabled {
   background-color: #E5E5E5;
   color: #ffffff;
 }
@@ -524,7 +525,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button_blue:disabled {
+.button_blue:disabled,
+.button_blue.disabled {
   background-color: #E5E5E5;
   color: inherit;
 }
@@ -706,7 +708,7 @@ body {
 .range_toogle_max {
   position: absolute;
   top: -9px;
-  left: 200px;
+  left: 209px;
 }
 
 .catalog_filter_style {
@@ -766,33 +768,31 @@ body {
   content: none;
 }
 
-.button_image_breadcrumbs {
+.button_breadcrumbs {
   display: block;
   margin: 0;
-  fill: #ffffff;
-  width: 13px;
-  height: 15px;
-  padding-top: 1px;
-}
-
-.breadcrumbs_hotel {
-  display: block;
+  padding: 0;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
-  padding: 0;
-  margin: 0;
+  text-decoration: none;
 }
 
-.breadcrumbs_hotel:hover {
+.breadcrumbs_item svg {
+  padding-top: 3px;
+}
+
+
+.button_breadcrumbs[href]:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs_hotel:focus {
+.button_breadcrumbs:focus {
   color: #ffffff;
 }
 
-.breadcrumbs_hotel:active {
+.button_breadcrumbs:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -868,6 +868,10 @@ body {
   appearance: none;
   margin: 0;
   color: #000000;
+}
+
+.style_price[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .style_price_left {
@@ -1042,8 +1046,10 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
-  width: 400px;
+  max-width: 400px;
   min-height: 36px;
+  display: block;
+  padding: 6px 0 6px 0;
 
 }
 
@@ -1056,8 +1062,7 @@ option .control_text {
 .select_control {
   font-family: "PT Sans", sans-serif;
   width: 292px;
-  padding: 12px 20px;
-  padding-right: 40px;
+  padding: 14px 40px 14px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0 70px;
@@ -1065,6 +1070,8 @@ option .control_text {
   -webkit-appearance: none;
   appearance: none;
   color: #333333;
+  background-color: #ffffff;
+  display: block;
 }
 
 .select_control_style {
@@ -1157,7 +1164,7 @@ option .control_text {
 
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  gap: 18px 20px;
 }
 
 .hotel_card_item {
@@ -1186,6 +1193,8 @@ option .control_text {
 
 .hotel_card_cover {
   display: block;
+
+  margin-bottom: 16px;
 }
 
 .hotel_card_title {
@@ -1194,7 +1203,7 @@ option .control_text {
   line-height: 1.17;
   display: block;
   color: #000000;
-  margin: 16px 0;
+  margin: 0;
 }
 
 .price {
@@ -1315,7 +1324,7 @@ option .control_text {
   flex-wrap: wrap;
   gap: 8px;
   width: 1060;
-  padding: 39px 0 60px;
+  padding: 37px 0 60px;
   margin: 0 70px;
   border-top: 1px solid #E6E6E6;
 }
@@ -1477,9 +1486,16 @@ option .control_text {
   background-color: #E6E6E6;
 }
 
+.check:hover::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .check:focus {
-  background-color: #E6E6E6;
   outline: 2px solid #000000;
+}
+
+.check:focus::placeholder {
+  color: #000000;
 }
 
 .style_input_date {
@@ -1667,20 +1683,4 @@ option .control_text {
 
 .svg_toogle {
   fill: #83B3D3;
-}
-
-.check:hover {
-  background-color: #E6E6E6;
-  color: #000000;
-  opacity: 0.8;
-}
-
-.check:focus {
-  background-color: #E6E6E6;
-  color: #000000;
-  opacity: 0.8;
-}
-
-.check:active {
-  border: 2px solid #000000;
 }
