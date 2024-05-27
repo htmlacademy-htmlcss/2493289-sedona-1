@@ -1036,7 +1036,7 @@ body {
   display: flex;
   min-width: 1060px;
   min-height: 49px;
-  margin: 0 70px 38px;
+  margin: 0 70px 36px;
 }
 
 .result_filter_text {
@@ -1062,7 +1062,7 @@ option .control_text {
 .select_control {
   font-family: "PT Sans", sans-serif;
   width: 292px;
-  padding: 14px 40px 14px 20px;
+  padding: 12px 40px 12px 19px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0 70px;
@@ -1071,6 +1071,10 @@ option .control_text {
   appearance: none;
   color: #333333;
   background-color: #ffffff;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
   display: block;
 }
 
@@ -1085,7 +1089,7 @@ option .control_text {
   width: 12px;
   height: 8px;
   right: 90px;
-  top: 19px;
+  top: 20px;
 
   position: absolute;
 }
@@ -1412,10 +1416,7 @@ option .control_text {
 }
 
 .button_close {
-  background-image: url("../images/vector_close_modal.svg");
-  background-repeat: no-repeat;
   background-color: #F2F2F2;
-  background-position: center 18px;
   width: 52px;
   height: 52px;
   border-radius: 100%;
@@ -1428,16 +1429,18 @@ option .control_text {
   position: absolute;
 }
 
-.button_close:hover {
-  background-color: #E6E6E6;
+.test {
+  text-align: center;
 }
 
+.button_close:hover,
 .button_close:focus {
   background-color: #E6E6E6;
 }
 
 .button_close:active {
-  opacity: 0.6;
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .modal_title {
@@ -1501,7 +1504,7 @@ option .control_text {
 .style_input_date {
   width: 577px;
   min-height: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 22px;
 
   position: relative;
 }
@@ -1526,11 +1529,12 @@ option .control_text {
 .modal_hint {
   padding: 0 20px 0 20px;
   margin-left: 137px;
-  width: 250px;
+  width: 400px;
   color: #FF5757;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.31;
+  display: block;
 }
 
 .hint_checkout {
